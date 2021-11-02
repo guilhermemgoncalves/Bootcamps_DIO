@@ -1,0 +1,23 @@
+Incio Jogo
+Sobe Pinguim Pequeno Azul
+Sobe Pinguim Grande Azul
+Atravessa
+Desce Pinguim Grande Azul
+Atravessa
+Sobre Pinguim Pequeno Verde
+Atravessa
+Desce Pinguim Pequeno Azul
+Atravessa
+Sobre Pinguim Grande Verde
+Atravessa
+Desce Pinguim Grande Verde
+Atravessa
+Sobre Pinguem Pequeno Vermelho
+Atravessa
+Desce Pinguim Pequeno Verde
+Atravessa
+Sobe Pinguim Grande Veremlho
+Atravessa
+Desce Pinguim Grande Vermelho
+Desce Pinguim Pequeno Vemelho
+Fim de Jogo
