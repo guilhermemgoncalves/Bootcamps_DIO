@@ -6,7 +6,7 @@ public class testeif {
 
 
        if (teste)
-           System.out.println("Verdadeiro");
+           System.out.println(84);
        else {
            System.out.println("Falso");
        }
