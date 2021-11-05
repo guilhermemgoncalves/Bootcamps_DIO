@@ -16,3 +16,35 @@ Sempre procurar versão LTS pois é uma versão definitiva, corre menos riscos d
 
 Springbot Entra no site start.spring.io
 
+
+
+## Primeiros comandos e atalhos Intellij
+
+`Sout` = Atalho pra `System.out.println("");`
+
+main = `Cria o main static void`
+
+##### Recebendo uma variável pela leitura de console:
+
+-------------------------
+
+Importar biblioteca Scanner: `import java.util.Scanner;`
+
+Iniciar variável de leitura: `Scanner ler = new Scanner(System.in);`
+
+ler variável "x" através da variável de leitura instanciada: `x = ler.nextDouble();`
+
+##### Principais comandos de String:
+
+Encontra o caractere da String x na posição y =`x.charAt(y)` Contagem iniciando de 0
+
+Mostra os caracteres x a partir da posição y =  `x.substring(y)` 
+
+Devolve um Inteiro com o tamanho máximo de caracteres da String x = `x.lenght`
+
+
+
+
+
+
+
