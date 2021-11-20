@@ -16,7 +16,114 @@ Sempre procurar versão LTS pois é uma versão definitiva, corre menos riscos d
 
 Springbot Entra no site start.spring.io
 
+## Variáveis Java.
 
+Definição: Um espaço na memória de computador onde se pode guardar valores.
+
+padrão de definição de uma variável
+
+<Visibilidade?>,<Modificador?> ,tipo , nome, <=valorinicial?>
+
+o que está entre parentes é opcional para a variável
+
+##### Visibilidade
+
+public protected e private , Ligado a orientação a objeto
+
+##### Modificador
+
+stactic e final, final é uma variável constante, depois que esse valor é definido na variável não pode ser alterado
+
+##### Tipo de dado
+
+Sempre deve ser definido, ou seja, a linguagem Java é fortemente tipada, para se utilizar o dado é necessário que ele seja classificado antes.
+
+##### Nome
+
+Nome dado a variável para conseguir usar e entender para que a variável serve.
+
+##### Valorincial
+
+é o valor que a variável vai ser setada no início do programa.
+
+#### Criação de variável 
+
+##### Convenções e regras
+
+* Não deve começar com números
+
+* Evitar usar "$" e "_ "
+
+* Case-sensitive: o Java diferencia letras maiúsculas e minúsculas no seu código, ou seja, `setNome` é diferente de `setnome`;
+* Não utilizar espaços na variáveis
+* Não utilizar palavras reservadas e caracteres especiais
+
+##### Boas Práticas
+
+* Sempre iniciar com letras minúsculas 
+* Nomes expressivos: de fácil observação para o que a variável serve
+* Notação Camelo: primeira letra minúscula e demais iniciais maiúscula. `nomeDaVariável;`
+* Quando uma variável é final utilizar todas as letras maiúsculas e separadas por _. `final NOME_DA_VARIÁVEL = 0;` 
+
+#### Tipificação de variável
+
+Existem dois tipos de tipificação de variáveis dependendo da linguagem, a utilização desse tipo depende se linguagem utilizada é compilada ou interpretadas.
+Linguagens Compiladas -> Forte
+
+Linguagens Interpretadas -> Fraca
+
+##### Tipificação forte
+
+As variáveis são estáticas, ou seja, não podem mudar seu nome durante o programa (Linguagem Java)
+
+##### Tipificação fraca
+
+As varáveis são dinâmicas, podem ser alteradas durante a execução do programa dependendo das instruções dadas pelo programadores
+
+##### Primitivo
+
+O tipo do dado primitivo geralmente tem relação ligação com o espaço de memória onde o dado é guardado int, double, etc. 
+
+Este tipo de dado geralmente é declarado com letra minúscula.
+
+##### Composto
+
+Pode ser composto por múltiplos dados de vários formatos
+
+##### Opções de tipos
+
+* Textual: char: carcteres de 16-bit unicode, representados por aspas simples ; String: um tipo especial (warpper) que carrega uma cadeia de caracteres, representados por aspas duplas
+* Numeral: byte (-128 a 127)inteiro;  short (-32.768 até 32.767)inteiro; long (9*10^18) inteiro, long sempre recebe um l no final; float(é um real com tamanho de long), sempre recebe um f no final.; double numero real
+* Lógico: boolean: true e false
+* Objeto.: será explorado mais a frente...
+
+### Operadores Aritméticos 
+
+São símbolos especiais que permitem alterações e iterações entre variáveis do mesmo tipo
+
+### Conversões (Casting)
+
+#### Definição: 
+
+é a transformação de uma determinável de tipo menos específico para um mais específico e vice-versa.
+
+#### Tipos
+
+##### Upcast (implicito)
+
+A alteração de uma variável para um tipo superior, ou seja, que possui mais capacidade de armazenamento, casting do tipo upcast geralmente não precisa necessariamente dizer qual tipo da variável que se deseja aumentar pois ela é superior e possui mais capacidade.
+
+Ex. `int i = 10; long l = i;`
+
+##### Downcast(explícito)
+
+A alteração de uma variável para um nível inferior, ou seja, que possui menos capacidade de armazenamento. No caso do Downcast, deve-se sempre informar qual o tipo de variável destino do rebaixamento, pois essa variável pode não comportar o dado armazenado.
+
+Ex. `long l = 10; int i = (long) l`
+
+##### Tabela de Casting
+
+![Screenshot_2](C:\Users\guilh\OneDrive\Imagens\Saved Pictures\Screenshot_2.png)
 
 ## Primeiros comandos e atalhos Intellij
 
@@ -24,7 +131,7 @@ Springbot Entra no site start.spring.io
 
 main = `Cria o main static void`
 
-##### Recebendo uma variável pela leitura de console:
+#### Recebendo uma variável pela leitura de console:
 
 -------------------------
 
@@ -34,7 +141,7 @@ Iniciar variável de leitura: `Scanner ler = new Scanner(System.in);`
 
 ler variável "x" através da variável de leitura instanciada: `x = ler.nextDouble();`
 
-##### Principais comandos de String:
+#### Principais comandos de String:
 
 Encontra o caractere da String x na posição y =`x.charAt(y)` Contagem iniciando de 0
 
@@ -42,7 +149,9 @@ Mostra os caracteres x a partir da posição y =  `x.substring(y)`
 
 Devolve um Inteiro com o tamanho máximo de caracteres da String x = `x.lenght`
 
-## Estudar conceitos da biblioteca `java.util.Date`
+* Estudar conceitos da biblioteca `java.util.Date`
+
+
 
 
 
@@ -52,7 +161,7 @@ Devolve um Inteiro com o tamanho máximo de caracteres da String x = `x.lenght`
 
 Elemento abstrato que se pode atribuir um ser classificável, Exemplo: Carros. Motos, casas.
 
-#### Caracteristicas de uma classe: 
+#### Características de uma classe: 
 
 Possui um nome; Possuem visibilidade (publico, private, protected); Possuem membros como: características e ações;
 
