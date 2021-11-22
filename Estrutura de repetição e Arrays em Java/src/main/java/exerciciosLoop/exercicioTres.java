@@ -12,13 +12,14 @@ package exerciciosLoop;
 
 import java.util.Scanner;
 
-public class exercicio3 {
+public class exercicioTres {
     public static void main(String[] args) {
 
         String nome;
         int idade;
         int salario;
         String sexo, estadoCivil;
+        boolean auxsex = false, auxest=false;
 
 
         Scanner scanner = new Scanner(System.in);
@@ -63,8 +64,46 @@ public class exercicio3 {
 
         } while (salario < 0);
 
+        while(!auxsex) {
+            System.out.print("Por favor digite seu Sexo(f/m): ");
+            sexo = scanner.next();
 
-        System.out.print("Por favor digite seu Sexo(f/m): ");
+
+            if (sexo.equalsIgnoreCase("f")) {
+                System.out.println("Sexo feminino");
+                auxsex = true;
+
+            } else if (sexo.equalsIgnoreCase("m")) {
+                System.out.println("Sexo Masculino");
+                auxsex = true;
+            } else
+                System.out.println("Sexo Inválido.");
+
+        }while(!auxest) {
+            System.out.print("Por favor digite seu estado civil: (s, c, v, d) ");
+            estadoCivil = scanner.next();
+
+
+            if (estadoCivil.equalsIgnoreCase("s")) {
+                System.out.println("Solteiro");
+                auxest = true;
+
+            } else if (estadoCivil.equalsIgnoreCase("c")) {
+                System.out.println("Casado");
+                auxest = true;
+            }
+               else if (estadoCivil.equalsIgnoreCase("v")) {
+                System.out.println("Viúvo");
+                auxest = true;
+
+            } else if (estadoCivil.equalsIgnoreCase("d")) {
+                System.out.println("Divorciado");
+                auxest = true;
+            } else
+                System.out.println("Estado Inválido.");
+        }
+
+
 
 
 
