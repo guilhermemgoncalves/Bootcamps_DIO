@@ -16,7 +16,7 @@ Sempre procurar versão LTS pois é uma versão definitiva, corre menos riscos d
 
 Springbot Entra no site start.spring.io
 
-## Variáveis Java.
+# Variáveis Java.
 
 Definição: Um espaço na memória de computador onde se pode guardar valores.
 
@@ -125,6 +125,128 @@ Ex. `long l = 10; int i = (long) l`
 
 ![Screenshot_2](C:\Users\guilh\OneDrive\Imagens\Saved Pictures\Screenshot_2.png)
 
+`
+
+## Estruturas de repetição (Loops)
+
+São estruturas de código que permitem realizar varias iterações até que uma determinada condição seja satisfeita
+
+### For
+
+A estrutura for é conhecida por ser um tipo de contador que realizar iterações finitas (pré-definidas) com um contador incremental ou decremental.
+
+Ex: `for (i=0; i<=x; i++ )`
+
+Explicação: 
+
+`i=0;`a variável contadora i é inicializada com zero (pode ser inicializada com qualquer numero desejado)
+
+`i>=x` é uma condição definida que deverá ser satisfeita para finalizar o loop
+
+`i++`é a forma de iteração, no caso incremento de 1 na variável i
+
+### For each
+
+for each é um for usado em arrays que simplifica a sintaxe, funciona da seguinte forma;
+
+Para um array com 5 posições e elementos já setados temos:
+
+`int[] x = new int[]{a, b, c, d, e}`
+
+`for (int y: x) { códigos, y } // for each`
+
+`for(int i=0; i<x.lenght(); i++) {códigos, int y = x [i] } //for clássico`
+
+no caso a diferença é que no for each, a variável y automaticamente irá setar valores em y correspondente ao array de x no loop. Já no caso do for clássico é necessário criar uma linha de código que recebe aquele valor instantâneo para manipulação no programa.
+
+No caso do for each, o looping será executado enquanto aos elementos das variáveis forem todos varridos, já no for clássico, precisamos setar o .length de forma manual para que a variável execute essa varredura, ou atribuir um valor numérico;
+
+### While
+
+Existem algumas formas de utiliizar o while
+
+`while (true){}` é uma estrutura de repetição infinita, que realiza o código dentro do colchete indefinidamente.
+
+`while (x...y){} ` Assim como no for, o while seu loop até que uma operação booleana retorne o dado false para a condição pré estabelecida entre x e y;
+
+`do{} while();` A estrutura do-while é interessante, pois a iteração realizada conta com pelo uma passagem dentro da estrutura antes verificar se a condição dentro do código é verdadeira ou falsa
+
+## Interruptores de código
+
+Os interruptores de códigos são elementos que realizam funções dentro de loops. A utilização desse recurso tem como função principal quando um laço é muito grande e conta como muitas condições de inicialização, podemos trazer essas condições dentro do laço e criar um laço infinito do tipo: `while(true){}`
+
+### Break
+
+O Interruptor break para o loop caso uma condição seja satisfeita 
+
+### Continue
+
+O interruptor continue interrompe somente a interação do loop atual
+
+### Return
+
+Return é um interruptor utilizado em métodos.
+
+Existem dois tipos de return 
+
+return sem valor `return;`
+
+return com valor `return valor;`
+
+-------------------------
+
+Existem dois tipos de interruptores Unlabelled(Sem etiqueta) e Labelled(com etiqueta).
+
+Os interruptores comuns são os unlabelled.
+
+O interruptores labelled são utilizados com a palavra reservada out, ou seja, interrompe a um determinado ponto do programa pré estabelecido pelo label.
+
+## Arrays
+
+Para se criar uma variável que armazene diversos valores utilizamos a técnica de arrays (Vetores e Matrizes).
+
+As variáveis arrays tem características bem solidas:
+
+### Sequencia
+
+Uma variável array tem seu endereçamento de forma sequencial, ou seja, podemos saber a ordem que esses dados são guardados no endereço de memória.
+
+### Finito e Fixo
+
+Os arrays tem valores finito e fixo, ou seja, quando uma variável array é declarada, ela deve ser instanciada com a quantidade de endereços que serão utilizadas pelo usuário, ou ao longo do programa, mas nunca é um valor indefinido onde podemos colocar variáveis.
+
+### Homogêneo
+
+A variável array não admite sua construção com dados de primitivos e/ou objetos diferentes, ou seja, não podemos criar um array com dados int e double, os dados precisam ser convertidos para ser armazenado no array.
+
+### Indexado
+
+A vaiável array é indexada, sendo assim, sua organização e seu sequenciamento pode ser garantido e o acesso a estas informações ficam mais coerentes.
+
+### Elemento 
+
+O elemento do array é exatamente o dado que está dentro do endereço do array
+
+### Tamanho 
+
+O tamanho do array é definido pela quantidade de elementos dentro do array, contados de 0-n.
+
+### Índice
+
+O Indice do array é o lugar exato onde o elemento do array está alocado.
+
+### Criação
+
+Para se instanciar uma array no java é comum utilizarmos a terminologia:
+
+ `<tipo>[] nome<?=valorinicial?>;` //Mais comum em java
+
+`<tipo> nome[]<?=valorinicial?>;`
+
+
+
+
+
 ## Primeiros comandos e atalhos Intellij
 
 `Sout` = Atalho pra `System.out.println("");`
@@ -149,11 +271,7 @@ Mostra os caracteres x a partir da posição y =  `x.substring(y)`
 
 Devolve um Inteiro com o tamanho máximo de caracteres da String x = `x.lenght`
 
-* Estudar conceitos da biblioteca `java.util.Date`
-
-
-
-
+* Estudar conceitos da biblioteca `java.util.Date
 
 ## Elementos da POO
 
@@ -266,6 +384,10 @@ Então o objeto bob e instanciado(`new`) numa classe cachorro, cujo os atributos
 
 Então podemos notar que os elementos dentro das linhas de código no código anterior são: **Classe**: Cachorro, (Testa_Cachorro é uma classe do tipo **main** que já pode ser interpretado como o programa em sí). tamanho e nome são **atributos** da classe que poderão ser herdados pelos objetos da classe. latir é o **método** da classe que processa os dados. **Objeto** é cada cachorro instanciado no programa (bob, rex e scooby, mas poderiam ser outros n objetos)
 
+
+
+
+
 ### Construtores:
 
 São atributos de inicialização do objeto, quando um objeto é instanciado com `new "Classe" ()` o objeto reserva um endereço na memória e esse endereço não é vazio, geralmente o que acontece é que por Default o java cria um construtor vazio:
@@ -324,9 +446,101 @@ Pode ser acessível no pacote da Classe que está trabalhando ou através de her
 
  
 
+# Estrutura de dados Java
 
 
 
+## Conceitos preliminares
+
+### Nota sobre Atribuição e referência
+
+Atribuição é quando colocamos um valor em uma variável decorrente de outro valor primitivo. exe:  ` int a = int b` , caso o valor de memória seja alterado tanto em int a ou int b, os valores continuarão os mesmos
+
+Quando se trata de objetos trabalhamos com referência, não é o valor de memória que é copiado, sim o endereço de memória do objeto `objA  = objb` 
+
+logo quando uma das variáveis do objeto é alterada os dois objetos mudam o seu valor.
+
+### Conceito de nó
+
+O nó é um espaço de memória para uma variável que possui além da capacidade de armazenar um dado + um endereço de referencia para outro nó.
 
 
+
+<img src="C:\Users\guilh\OneDrive\Imagens\Saved Pictures\Screenshot_3.png" style="zoom:67%;" />
+
+### Conceito de encadeamento de nó
+
+Os dados de objetos podem ser relacionado entre com outras variáveis através de apontamentos entre referencias. apontando um pra outro.
+
+![](C:\Users\guilh\OneDrive\Imagens\Saved Pictures\Screenshot_4.png)
+
+
+
+### Generics em Java
+
+Para se criar uma lista podemos escrever 
+
+`Lista<String> minhaLista = new Lista();`
+
+onde Lista é o tipo da variável lista
+
+<String> é o tipo de dado que haverá dentro da lista
+
+minhaLista é o nome da variável
+
+## Pilha
+
+Lembrar do conceito de pilha de livros.
+
+O elemento que entra por ultimo sai primeiro. LIFO: Last In, First Out; 
+
+Utilizar o conceito de encadeamento de nó, o conceito de pilha significa que o primeiro nó gerado será o ultimo a sair ou seja, o próximo nó sempre faz referência ao nó anterior.
+
+null<-no1<-no2<-no3<-no4<-topo
+
+### Método de manipulação de pilha
+
+#### Método top
+
+O método referencia e consulta o ultimo item da pilha.
+
+no meuNo = pilha.top();
+
+o meuNo recebe a referencia do topo da lista, ou seja o ultimo dado inserido
+
+Int numero = meuNo.getInt();  recebe o valor do ultimo nó
+
+![](C:\Users\guilh\OneDrive\Imagens\Saved Pictures\Screenshot_5.png)
+
+### Método pop
+
+Remove o ultimo item da pilha de fato.
+
+No meuNo = pilha.pop();
+
+No meuNó = recebe o item da pilha na variável e exclui da pilha.
+
+int numero = meuNo.getInt(); recebe a referencia para o item abaixo.
+
+int numero = int;
+
+![](C:\Users\guilh\OneDrive\Imagens\Saved Pictures\Screenshot_6.png)
+
+### Método Push
+
+Método que adiciona um item ao topo da pilha
+
+No meuNo = mew no(); Cria novo nó
+
+meuNO.setInt(1); // Adiciona um novo valor dentro do nó.
+
+meuNo fica com a referencia Null
+
+a referencia de topo é adicionada ao nó e somente após isso é criado uma nova referência de topo.
+
+### Método isEmpity
+
+Retorna se sua pilha ou estrutura de dados é = Null, ou seja a estrutura de dado está vazia.
+
+o método retorna true caso esteja vazia.
 
