@@ -1,7 +1,0 @@
-Resistor 10k 5
-Lm35 4
-Pt100 3
-Sensor de umidade no solo 18
-12 10
-capacitor 33uf 145
-capacitor 330uf 156
