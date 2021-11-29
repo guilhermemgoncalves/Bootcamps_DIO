@@ -1,0 +1,15 @@
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\bin\Debug\net6.0\HerancaNaPratica.exe
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\bin\Debug\net6.0\HerancaNaPratica.deps.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\bin\Debug\net6.0\HerancaNaPratica.runtimeconfig.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\bin\Debug\net6.0\HerancaNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\bin\Debug\net6.0\ref\HerancaNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\bin\Debug\net6.0\HerancaNaPratica.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\HerancaNaPratica.csproj.AssemblyReference.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\HerancaNaPratica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\HerancaNaPratica.AssemblyInfoInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\HerancaNaPratica.AssemblyInfo.cs
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\HerancaNaPratica.csproj.CoreCompileInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\HerancaNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\ref\HerancaNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\HerancaNaPratica.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\HerancaNaPratica\HerancaNaPratica\obj\Debug\net6.0\HerancaNaPratica.genruntimeconfig.cache

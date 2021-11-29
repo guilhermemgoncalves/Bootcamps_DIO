@@ -1,0 +1,15 @@
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ClasseObject.csproj.AssemblyReference.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ClasseObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ClasseObject.AssemblyInfoInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ClasseObject.AssemblyInfo.cs
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ClasseObject.csproj.CoreCompileInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\bin\Debug\net6.0\ClasseObject.exe
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\bin\Debug\net6.0\ClasseObject.deps.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\bin\Debug\net6.0\ClasseObject.runtimeconfig.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\bin\Debug\net6.0\ClasseObject.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\bin\Debug\net6.0\ref\ClasseObject.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\bin\Debug\net6.0\ClasseObject.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ClasseObject.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ref\ClasseObject.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ClasseObject.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClasseObject\ClasseObject\obj\Debug\net6.0\ClasseObject.genruntimeconfig.cache

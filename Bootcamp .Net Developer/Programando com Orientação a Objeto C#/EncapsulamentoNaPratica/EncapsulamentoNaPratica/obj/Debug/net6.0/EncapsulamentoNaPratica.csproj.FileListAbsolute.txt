@@ -1,0 +1,15 @@
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\bin\Debug\net6.0\EncapsulamentoNaPratica.exe
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\bin\Debug\net6.0\EncapsulamentoNaPratica.deps.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\bin\Debug\net6.0\EncapsulamentoNaPratica.runtimeconfig.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\bin\Debug\net6.0\EncapsulamentoNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\bin\Debug\net6.0\ref\EncapsulamentoNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\bin\Debug\net6.0\EncapsulamentoNaPratica.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\EncapsulamentoNaPratica.csproj.AssemblyReference.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\EncapsulamentoNaPratica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\EncapsulamentoNaPratica.AssemblyInfoInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\EncapsulamentoNaPratica.AssemblyInfo.cs
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\EncapsulamentoNaPratica.csproj.CoreCompileInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\EncapsulamentoNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\ref\EncapsulamentoNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\EncapsulamentoNaPratica.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\EncapsulamentoNaPratica\EncapsulamentoNaPratica\obj\Debug\net6.0\EncapsulamentoNaPratica.genruntimeconfig.cache

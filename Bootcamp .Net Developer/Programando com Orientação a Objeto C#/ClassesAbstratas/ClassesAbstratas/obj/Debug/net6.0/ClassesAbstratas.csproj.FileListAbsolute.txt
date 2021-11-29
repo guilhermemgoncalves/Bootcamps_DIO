@@ -1,0 +1,15 @@
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ClassesAbstratas.csproj.AssemblyReference.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ClassesAbstratas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ClassesAbstratas.AssemblyInfoInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ClassesAbstratas.AssemblyInfo.cs
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ClassesAbstratas.csproj.CoreCompileInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\bin\Debug\net6.0\ClassesAbstratas.exe
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\bin\Debug\net6.0\ClassesAbstratas.deps.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\bin\Debug\net6.0\ClassesAbstratas.runtimeconfig.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\bin\Debug\net6.0\ClassesAbstratas.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\bin\Debug\net6.0\ref\ClassesAbstratas.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\bin\Debug\net6.0\ClassesAbstratas.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ClassesAbstratas.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ref\ClassesAbstratas.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ClassesAbstratas.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\ClassesAbstratas\ClassesAbstratas\obj\Debug\net6.0\ClassesAbstratas.genruntimeconfig.cache

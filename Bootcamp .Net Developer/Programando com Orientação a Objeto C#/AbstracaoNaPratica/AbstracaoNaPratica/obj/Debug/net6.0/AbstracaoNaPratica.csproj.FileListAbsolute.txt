@@ -1,0 +1,15 @@
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\bin\Debug\net6.0\AbstracaoNaPratica.exe
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\bin\Debug\net6.0\AbstracaoNaPratica.deps.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\bin\Debug\net6.0\AbstracaoNaPratica.runtimeconfig.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\bin\Debug\net6.0\AbstracaoNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\bin\Debug\net6.0\ref\AbstracaoNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\bin\Debug\net6.0\AbstracaoNaPratica.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\AbstracaoNaPratica.csproj.AssemblyReference.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\AbstracaoNaPratica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\AbstracaoNaPratica.AssemblyInfoInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\AbstracaoNaPratica.AssemblyInfo.cs
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\AbstracaoNaPratica.csproj.CoreCompileInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\AbstracaoNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\ref\AbstracaoNaPratica.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\AbstracaoNaPratica.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\AbstracaoNaPratica\AbstracaoNaPratica\obj\Debug\net6.0\AbstracaoNaPratica.genruntimeconfig.cache

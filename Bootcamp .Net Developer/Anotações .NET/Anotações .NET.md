@@ -1,13 +1,13 @@
 # Anotações .NET
 
-## O que é o .NET
+# O que é o .NET
 
 É uma framework que da suporte a alguns tipos de linguagem com: C# F# e VB
 Para se programar atravéz do VScode com .NET, precisamos instalar sua SDK separadamente
 Para utiliza-lo com o Visual Studio podemos instalar o pacote dentro do próprio aplicativo do VS.
 Lembrando: Visual Studio é uma IDE com vários recursos para a programação em C# e o VS code é apenas um editor de código, que possui vários recursos de conexão, porem não auxilia automáticamente na produção do código.
 
-## O que é e como funciona o C#
+# O que é e como funciona o C#
 Assim como Java é uma linguagem fortemente tipada (o que permite detectar erros em tempo de compilação), é elegante, e orientada a objetos.
 Possui sintaxe de alto nível similar a C, C++ e Java
 Suporta os conceitos de orientação ao objetos.
@@ -18,7 +18,7 @@ O .NET já possui uma infinidade de classe pré implementadas que facilitam a ex
 
 ### Conversão do código fonte
 
-O Cogido fonte possui o seguinte fluxo de conversão:
+O Codigo fonte possui o seguinte fluxo de conversão:
 *  O arquivo é gerado em linguagem de alto nível através de Editor de texto(ou IDE) Arquivo C# (cs) 
 * O arquivo é Compilado por Roslyn (IL - Intermediary language)
 * O Código IL  são armazenados em um arquivo intermediário chamado assembly (.exe ou .dll)
@@ -151,4 +151,253 @@ O tamanho do array é definido pela quantidade de elementos dentro do array, con
 
 ### Índice
 
-O Indice do array é o lugar exato onde o elemento do array está alocado.
+O Índice do array é o lugar exato onde o elemento do array está alocado.
+
+
+
+# Programação com Orientação a Objetos
+
+## O Que é a POO
+
+É um paradigma, método ou técnica de programação. 
+
+Outros paradigmas de programação: estruturada, imperativa, procedural, orientada a eventos, etc.
+
+A POO procura aproximar o mundo real ao mundo virtual, utilizando as características como Abstração, Encapsulamento, Herança e Polimorfismo.
+
+### Classe 
+
+É um molde para um objeto. *Pessoa tem, idade, nome, altura, peso.*
+
+### Objeto 
+
+É um item único pertencente a uma classe.  *Guilherme é uma pessoa, que tem 29 anos, Altura 1,90m, 110kg*
+
+## Pilares POO
+
+### Abstração
+
+Abstração é colocar somente os atributos de interesse para ser utilizado no problema em questão.
+
+ passos para criar uma classe e implementar num objeto.
+
+Alt+shift+C - Atalho para criar classe 
+
+Colocar num pacote (pasta) -> Models
+
+Criar classe
+
+`public class Pessoa`
+    `{`
+
+Métodos, atributos, etc.
+
+​	  `}`
+
+Criar métodos setter e getters para atributos da classe
+
+`public string nome { get; set; }` 
+
+`public int  idade { get; set; }`
+
+Criar método de apresentação para ser método de saída
+
+ `public void Apresentar()`
+        `{`
+            `Console.WriteLine($"Olá, meu nome é {nome} e tenho {idade} anos");`
+
+        }
+
+
+
+No programa main
+
+`Pessoa p1 = new Pessoa();` //Instanciamento da Classe
+`p1.nome = "bob";`// setando atributo nome no objeto pessoa p1
+`p1.idade = 20;` // setando atributo idade no objeto pessoa p1
+`p1.Apresentar();`// Realizando metodo apresentar.  que imprime na tela:
+
+Olá meu nome é bob e tenho 20 anos.
+
+### Encapsulamento
+
+Serve para proteger uma classe e definir limites para alteração das suas propriedades.
+
+Expor seu comportamento e expor somente o necessário.
+
+![Captura de tela 2021-11-29 102307](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\TabelaEncapsulamento.png)
+
+Implementar classe retângulo onde:
+
+comprimento: double é uma atributo privado
+
+largura: double é uma atributo privado
+
+definirMedidas: é um método publico
+
+Na prática:
+
+`private double comprimento;`
+
+`private double largura;`
+
+`private bool valido;` // São Atributos internos da classe que não podem ser manipulados diretamente externo da classe
+
+
+
+
+
+       public void DefinirMerdidas(double comprimento, double largura)
+       {
+            if (comprimento > 0 && largura>0)
+                {
+                this.comprimento = comprimento; // essa linha especificamente, passa o valor de fora para dentro
+                podemos chamar de metodo construtor da classe
+                this.largura = largura;
+                valido = true;
+            } else
+            {
+                Console.WriteLine("Valores Invalidos");
+            }
+    
+        }
+
+// É um método permite receber valores de medidas externamente da classe.
+
+
+
+        public double ObterArea()
+            {
+                if (valido)
+                    return comprimento * largura;
+                else
+                { Console.WriteLine("Preencha valores validos");
+                    return 0;
+                }}
+
+// é um método que executa o equacionamento utilizando valores privados da classe.
+
+### Herança
+
+Permite herdar atributos, métodos e comportamentos em outras classes.
+
+Serve para agrupar objetos que são do mesmo tipo porém com características diferentes.
+
+Replicar métodos e atributos de outra classe para reaproveitamento de código e ajuda na abstração das classes.
+
+Ex:
+
+![Herança](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Herança.png)
+
+A classe pessoa tem: Atributos nome, idade, apresentar
+
+A classe aluno tem: Atributos: nome, idade, nota e o método apresentar()
+
+A classe aluno tem: Atributos: nome, idade, salário e o método apresentar()
+
+### Polismorfismo
+
+Sobrescrever métodos das classes filhas para que se comportem de uma maneira diferente e ter sua própria implementação
+
+![image-20211129132107106](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Polimorfismo)
+
+Quando o método apresentar() não atende o método da classe pai, podemos sobescrever o método da classe filha.
+
+#### Em tempo de compilação
+
+Podemos sobrescrever o método pai utilizando um método com assinatura igual, porem a quantidade de parâmetros diferentes
+
+public int metod(int num1, int num2){}
+
+public int metod(int num1, int num2, int num3){}
+
+#### Em tempo de execução
+
+Podemos sobrescrever o método pai, utilizando uma sintaxe simultaneamente
+
+Na classe pai: 
+
+`public virtual void Metod(){}`
+
+Na classe filho
+
+`public override void Metod(){}`
+
+Sim
+
+
+
+ ### Classe Abstrata
+
+A classe abstrata é uma classe molde, ou seja, não pode ser instanciada, é apenas um modelo, e só pode ser usada se for herdada
+
+Também é possível gerar métodos abstratos que não tem implementação na classe e pode ser utilizada por quem herdou
+
+![image-20211129142431002](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\CLasse Abstrata)
+
+A Classe Conta não pode ser instanciada como objeto, e carrega apenas um molde para os demais tipos de classe derivados de conta.
+
+O método Creditar()  só pode ser escrita a partir do polimorfismo, ou seja, sobrescrevendo o método da classe nativa.
+
+Já o método ExibirSaldo() é opcional.
+
+### Classe selada
+
+É uma classe final, que não pode ser pai.
+
+Também existem métodos selados, que não podem sofrer polimorfismo.
+
+
+
+![image-20211129151513303](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Classe selada)
+
+![image-20211129151647609](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Metodos Selado)
+
+Sintaxe
+
+public class sealed Classe
+
+### Classe Object
+
+A classe System.Object é a mãe de todas as classes do .NET. Sua função é criar prover serviços de baixo nível para o programador C#.
+
+### Interface
+
+É muito semelhante a uma classe Abstrata, define métodos abstratos ou não, para que sejam implementados por quem usar a interface.
+
+O métodos da interface não podem ser instanciados.
+
+Quando implementar uma interface podemos implementar métodos, podemos colocar retorno ou não. A interface obriga a classe que implementou a interface a implementar um método com um retorno e lógica.
+
+O conceito de interface substitui o conceito de herança mutipla.
+
+![image-20211129155607503](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Interface)
+
+Para gerar em código uma interface uma boa prática é criar uma pasta chamada interface separando classes em interfaces.
+
+Boa prática na criação da classe de interface é sempre colocar um i maiúsculo antes do nome ICalculadora.
+
+As interfaces criadas contém a sintaxe 
+
+
+    namespace Interface.Interface
+    {
+        public interface ICalculadora
+        {
+            int Somar(int num1, int num2);
+            int Subtrair(int num1, int num2);
+            int Multiplicar(int num1, int num2);
+            int Dividir(int num1, int num2);
+         }
+    }
+
+Classes de interface não possuem modificadores de acesso pois por padrão é public.
+
+A implementação da interface no código é exatamente igual a herança
+
+Prevalece o método da classe não o método da interface;
+
+
+
+
+
