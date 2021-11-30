@@ -196,17 +196,18 @@ Métodos, atributos, etc.
 
 Criar métodos setter e getters para atributos da classe
 
-`public string nome { get; set; }` 
+`public string nome { get; set; }`
 
-`public int  idade { get; set; }`
+ `public int  idade { get; set; }`
 
 Criar método de apresentação para ser método de saída
 
- `public void Apresentar()`
-        `{`
-            `Console.WriteLine($"Olá, meu nome é {nome} e tenho {idade} anos");`
 
-        }
+
+       `public void Apresentar()`
+            `{`
+                `Console.WriteLine($"Olá, meu nome é {nome} e tenho {idade} anos");`
+                }
 
 
 
@@ -295,7 +296,11 @@ A classe aluno tem: Atributos: nome, idade, nota e o método apresentar()
 
 A classe aluno tem: Atributos: nome, idade, salário e o método apresentar()
 
-### Polismorfismo
+Na prática  a classe que herda, precisa conter o nome da classe pai
+
+`Public class Aluno : Pessoa`
+
+### Polimorfismo
 
 Sobrescrever métodos das classes filhas para que se comportem de uma maneira diferente e ter sua própria implementação
 
@@ -357,6 +362,8 @@ Sintaxe
 
 public class sealed Classe
 
+public sealed override void Metod()
+
 ### Classe Object
 
 A classe System.Object é a mãe de todas as classes do .NET. Sua função é criar prover serviços de baixo nível para o programador C#.
@@ -397,7 +404,312 @@ A implementação da interface no código é exatamente igual a herança
 
 Prevalece o método da classe não o método da interface;
 
+### Referência
+
+Caso seja necessário podemos passar valores entre dois métodos diferentes dentro de uma mesma classe usando a palavra reservada ref
+
+exemplo
 
 
 
 
+    
+    
+        public class ref 
+        {
+        static void Inverter(ref int x, ref int y)
+        {
+        int temp = x
+        x= y;
+        y = temp;
+        }
+        public static void Inverter()
+        {
+        int i=1,j=2;
+        Inverter(ref i, ref j)
+        System.Console.WriteLine($"{i} e {j}")
+        
+        // com ref o console imrpimirá, 2 e 1
+        // sem ref o console imprimirá, 1 e 2
+        }
+            
+         }
+    
+
+Ou seja o método ref aponta para onde quero recebe a variável 
+
+### Out
+
+Utilizar o Out é necessário caso eu queria fixar no método construtor da classe quais valores serão de saída.
+
+    public class out
+    {
+    static void Dividir(int x,int y, out resultado, out resto)
+    {
+    	resultado = x/y;
+    	resto = x%y;
+    }
+    public static Dividir()
+    {
+    	Dividir(10,3, out int resultado, out int resto)
+    
+    }
+        
+    
+
+
+
+## Manipulação de Arquivos
+
+Para a manipulação de arquivos usamos 3 classes principais a File, a Directory e Path, essas classes são estáticas sendo assim não precisam ser instanciadas, basta fazer o import de System i/o. 
+
+Ao manipular essa classe, sempre prestar atenção no caminho onde é colocado os arquivos, pois as vezes o C# não tem permissão para acessa-los.
+
+### Diretórios
+
+#### Para localiza diretórios 
+
+na prática temos o código:
+
+    public class FileHelper // nome da classe de manipulação de diretório.
+    {
+        public void ListarDiretorios(String caminho) //método listar diretórios recebe uma string por padrão que indica o caminho (C:\\...\\destino)
+        {
+           var retornoCaminho = Directory.GetDirectories(caminho, "*", SearchOption.AllDirectories); 
+           // a Variável retorno caminho recebe um array de strings com os caminhos existentes e armazena.
+           
+           //Para achar diretório somente na pasta raiz, utilizar somente parametro caminho, para achar todos os diretórios e subdiretórios utilizar "*" que significa todos, e SearchOption.AllDirectories. 
+
+
+​    
+            foreach( var retorno in retornoCaminho)
+            {
+                Console.WriteLine(retorno);
+            }
+            // a variável var retornoCaminho recebe o caminho instantâneo do valor do diretório e joga dentro do for each, cada vez que houver um diretório valido o for each realiza a impressão do caminho que está na variável retorno.
+        }
+    
+    }
+    
+    Programa Main
+    
+    {
+    
+    var caminho = "C:\\PastaTeste"; // cria um caminho base para ser examinado
+    FileHelper helper = new FileHelper();
+    helper.ListarDiretorios(caminho);// aciona o método com o caminho gerado para que o diretório faça a busca
+    
+    }
+
+
+
+
+
+o caractere * é coringa, que varre tudo, se colocarmos qualquer coisa por exemplo * 2 * siginifica que se tiver 2 em qualquer lugar do nome o retorna arquivos irá armazenar no seu array.
+
+#### Criar diretório e subdiretórios
+
+
+​       
+       public  void CriarDiretorio(string caminho)
+        {
+           var retorno = Directory.CreateDirectory(caminho);
+            Console.WriteLine(retorno.FullName);
+        }
+      ----------------------------  
+           using System.IO;
+       
+       //Para utilizar a biblioteca Path é necessário sempre importar o system.Io;
+        main{
+        
+        helper.CriarDiretorio(Path.Combine(caminho, "PastaTeste3", "Subpasta Teste3"));
+        
+        //Path combine é uma forma de concatenar endereços de diretório, caso um diretório não exista (caso "PastaTest3") o programa irá cria-lo para criar o subdiretório.
+        
+        // helper.CriarDiretorio  é o metodo de criação de diretório, onde caminho é o caminho utilizado é o caminho normal onde se quer criar as pastas e depois da virgula são as pastas criadas (neste contexto)
+        
+        }
+
+#### Apagar Diretório
+
+Para apagar diretório temos:
+       
+
+       main
+       {
+       helper.ApagarDiretorio(Path.Combine(caminho, "PastaTeste1"), true);
+       }
+
+
+​       
+        public void ApagarDiretorio(string caminho, bool apagarArquivos)
+            {
+                Directory.Delete(caminho, apagarArquivos);
+             }
+             
+            // o Metodo delete apaga diretório, mas é necessário uma confirmção Booleana no metodo para que seja dada a permissão para apagar o arquivo de fato.
+
+
+Observação: quando algo é apagado no C# ele é excluído permanentemente, então é necessário cuidado extremo para apagar pastar e diretório no C#
+
+### Arquivos
+
+<u>**Todas as operações com caminho devemos lembrar que o nome do arquivo faz parte do caminho!**</u>
+
+#### Localizar arquivos
+
+Dentro dos diretórios segue o mesmo padrão
+
+
+
+
+
+     public void ListarArquivos(string caminho)
+            {
+                var retornaArquivos = Directory.GetFiles(caminho, "*.txt", SearchOption.AllDirectories);
+                foreach(var retorno in retornaArquivos)
+                {
+                    Console.WriteLine(retorno);
+                }
+            }
+
+
+Para filtrar a busca por tipo de arquivo utilizamos "*.extensão". 
+
+#### Criar arquivo .txt
+
+
+​       
+       main
+       {
+       helper.CriarArquivoTexto(Path.Combine(caminho,"arquivo teste.txt"),  "teste de escrita de arquivo"); // teste de escrita vai no corpo to texto.
+       }
+       
+       public void CriarArquivoTexto(string caminho, string conteudo)
+            {
+                if(!File.Exists(caminho))// if assegura que o testo não será sobreescrito.
+                 File.WriteAllText(caminho, conteudo);
+                 }
+        }
+
+
+#### Criar texto com Stream
+
+Obs: O uso da stream é necessário para que não escrevamos tudo de uma vez no arquivo txt, pois fazer isso consome muita memória do computador.
+
+
+       using System.Collections.Generic;// para utilizar a função list temos que importar System Collections.
+
+
+​       
+       main
+       {
+       var listaString = new List<string> { "linha1", "Linha2", "linha3" }; // Criar conteudo na lista de strings
+       helper.CriarArquivoTextoStream(Path.Combine(caminho, "arquivo teste-stream.txt"), listaString); // cria um arquivo stream para receber texto.
+       }
+       
+      public void CriarArquivoTextoStream(string caminho, List<string> conteudo)// O conteúdo da stream deve ser uma lista de Strings
+            {
+                using (var stream = File.CreateText(caminho)) //using permite que o arquivo seja inicializado somente quando usado, poupando espaço de memória.
+                
+                {
+                    foreach (var linha in conteudo)
+                    {
+                        stream.WriteLine(linha); //escreve stream linha a linha.
+                    }
+                }
+    
+    		}
+
+#### Adicionar texto e texto Stream
+
+Para adicionar texto em arquivos basta alterar as propriedades de Creat para Append.
+
+
+
+        public void AdicionarTexto(string caminho, string conteudo)
+            {
+                File.AppendAllText(caminho, conteudo);
+            }
+             public void AdicionarTextoStream(string caminho, List<string> conteudo)
+            {
+                using (var stream = File.AppendText(caminho))
+                {
+                    foreach (var linha in conteudo)
+                    {
+                        stream.WriteLine(linha);
+                    }
+                }
+             }
+            
+
+#### Lendo arquivos
+
+     public void LerArquivo(String caminho)
+            {
+                var conteudo = File.ReadAllLines(caminho);
+                foreach (var linha in conteudo)
+                {
+                    Console.WriteLine(linha);
+                }
+
+#### Lendo arquivos Stream
+
+        main
+        {
+        helper.LerArquivoStream(Path.Combine(caminho, "arquivo teste-stream.txt"));
+        }
+        
+        public void LerArquivoStream(string caminho)
+        {
+            string linha = string.Empty;
+            using (var stream = File.OpenText(caminho))
+            {
+                while((linha = stream.ReadLine())!= null) // faz com que a leitura seja feita de forma sequencial até que seja nulo e o programa encerre
+                {
+                    Console.WriteLine(linha);
+                }
+            }
+    
+        }
+
+#### Movendo arquivos
+
+      
+        main
+        {	 var caminho = "C:\\PastaTeste";
+       		 var novocaminho = Path.Combine(caminho, "PastaTeste3");
+       		 helper.MoverArquivo(Path.Combine(caminho, "arquivo teste.txt"), Path.Combine(novocaminho, "arquivo teste.txt"));
+    
+        }
+        
+        
+        public void MoverArquivo(string caminho, string novocaminho)
+        {
+            File.Move(caminho, novocaminho);
+        }
+    
+#### Copiar arquivo
+
+    public void CopiarArquivo(string caminho, string novocaminho)
+        {
+            File.Copy(caminho, novocaminho);
+        }
+    
+
+
+Por padrão o método copy não sobrescreve o arquivo caso seu nome seja duplicado. Caso desejar sobrescrever o método copy tem sobrecarga com valor booleano:
+
+    
+        public void CopiarArquivo(string caminho, string novocaminho bool sobrescrever)
+        {
+            File.Copy(caminho, novocaminho, sobrescrever);
+        }
+    
+#### Deletar arquivos 
+
+     
+        public void DeletarArquivo(string caminho)
+        {
+            File.Delete(caminho);
+        }

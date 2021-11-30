@@ -1,0 +1,15 @@
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\bin\Debug\net6.0\TrabalhandoComArquivos.exe
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\bin\Debug\net6.0\TrabalhandoComArquivos.deps.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\bin\Debug\net6.0\TrabalhandoComArquivos.runtimeconfig.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\bin\Debug\net6.0\TrabalhandoComArquivos.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\bin\Debug\net6.0\ref\TrabalhandoComArquivos.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\bin\Debug\net6.0\TrabalhandoComArquivos.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\TrabalhandoComArquivos.csproj.AssemblyReference.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\TrabalhandoComArquivos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\TrabalhandoComArquivos.AssemblyInfoInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\TrabalhandoComArquivos.AssemblyInfo.cs
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\TrabalhandoComArquivos.csproj.CoreCompileInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\TrabalhandoComArquivos.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\ref\TrabalhandoComArquivos.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\TrabalhandoComArquivos.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\obj\Debug\net6.0\TrabalhandoComArquivos.genruntimeconfig.cache

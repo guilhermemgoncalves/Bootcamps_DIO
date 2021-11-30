@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TrabalhandoComArquivos</id>
+    <version>1.0.0</version>
+    <authors>TrabalhandoComArquivos</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\bin\Debug\net6.0\TrabalhandoComArquivos.runtimeconfig.json" target="lib\net6.0\TrabalhandoComArquivos.runtimeconfig.json" />
+    <file src="C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Programando com Orientação a Objeto C#\TrabalhandoComArquivos\TrabalhandoComArquivos\bin\Debug\net6.0\TrabalhandoComArquivos.dll" target="lib\net6.0\TrabalhandoComArquivos.dll" />
+  </files>
+</package>
