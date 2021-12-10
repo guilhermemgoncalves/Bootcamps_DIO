@@ -1,0 +1,15 @@
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\bin\Debug\net6.0\colecoes.exe
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\bin\Debug\net6.0\colecoes.deps.json
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\bin\Debug\net6.0\colecoes.runtimeconfig.json
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\bin\Debug\net6.0\colecoes.dll
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\bin\Debug\net6.0\ref\colecoes.dll
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\bin\Debug\net6.0\colecoes.pdb
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\colecoes.csproj.AssemblyReference.cache
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\colecoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\colecoes.AssemblyInfoInputs.cache
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\colecoes.AssemblyInfo.cs
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\colecoes.csproj.CoreCompileInputs.cache
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\colecoes.dll
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\ref\colecoes.dll
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\colecoes.pdb
+C:\Users\Priscila\Área de Trabalho\colecoes\colecoes\obj\Debug\net6.0\colecoes.genruntimeconfig.cache

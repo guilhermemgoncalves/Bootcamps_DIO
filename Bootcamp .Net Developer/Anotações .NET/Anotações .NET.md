@@ -119,39 +119,572 @@ return sem valor `return;`
 
 return com valor `return valor;
 
-## Arrays em C#
+## Coleções em C#
+
+### Arrays
 
 Para se criar uma variável que armazene diversos valores utilizamos a técnica de arrays (Vetores e Matrizes).
 
 As variáveis arrays tem características bem solidas:
 
-### Sequencia
+#### Sequencia
 
 Uma variável array tem seu endereçamento de forma sequencial, ou seja, podemos saber a ordem que esses dados são guardados no endereço de memória.
 
-### Finito e Fixo
+#### Finito e Fixo
 
 Os arrays tem valores finito e fixo, ou seja, quando uma variável array é declarada, ela deve ser instanciada com a quantidade de endereços que serão utilizadas pelo usuário, ou ao longo do programa, mas nunca é um valor indefinido onde podemos colocar variáveis.
 
-### Homogêneo
+#### Homogêneo
 
 A variável array não admite sua construção com dados de primitivos e/ou objetos diferentes, ou seja, não podemos criar um array com dados int e double, os dados precisam ser convertidos para ser armazenado no array.
 
-### Indexado
+#### Indexado
 
 A vaiável array é indexada, sendo assim, sua organização e seu sequenciamento pode ser garantido e o acesso a estas informações ficam mais coerentes.
 
-### Elemento 
+#### Elemento 
 
 O elemento do array é exatamente o dado que está dentro do endereço do array
 
-### Tamanho 
+#### Tamanho 
 
 O tamanho do array é definido pela quantidade de elementos dentro do array, contados de 0-n.
 
-### Índice
+#### Índice
 
 O Índice do array é o lugar exato onde o elemento do array está alocado.
+
+### Ordenando Arrays
+
+Existem diversos tipos de algoritmos, a ideia é entender diversos tipos de algoritmos para saber como eles funcionam mas o pró´rioi .NET faz essa ordenação automaticamente
+
+#### Algoritmo de ordenação Bubble Sort
+
+O Algoritmo Bubble Sort é um metodo de ordenação de arrays que funciona com a comparação
+Se o dado atual for maior que o dado anterior, trocamos os elementos de posição, assim os elementos maiores são colocados nas posições mais adiante
+
+```C#
+
+
+using colecoes.Helper;
+
+OperacoesArray  op = new OperacoesArray();
+
+int[] array = new int[5] { 4, 9, 1, 3, 2 };
+
+Console.WriteLine("Array original");
+op.ImprimirArray(array);
+
+op.OrdenarBubblueSort(ref array);
+
+Console.WriteLine("Array ordenado");
+op.ImprimirArray(array);
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace colecoes.Helper
+{
+    public class OperacoesArray
+    {
+        public void OrdenarBubblueSort(ref int[] array)
+        {
+            int temp = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = 0; j < array.Length-1; j++)
+                {
+                    if (array[j] > array[j + 1])
+                    {
+                        temp = array[j + 1];
+                        array[j+1] = array[j];
+                        array[j] = temp;
+                    }
+                }
+            }
+        }
+
+        public void ImprimirArray(int[] array)
+        {
+            for(int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
+        }
+
+    }
+}
+````
+
+
+
+
+#### Selection Sort
+
+O algoritmo Selction Sort marca a posição do array e procura o menor elemento a partir dele.
+
+
+### Classe Array
+
+O C# Possui uma classe própria para trabalhar com array, chamada Array.
+
+#### Copiar um Array
+
+
+```C#
+OperacoesArray  op = new OperacoesArray();
+
+int[] array = new int[5] { 4, 9, 1, 3, 2 };
+int[] array2 = new int[10];
+
+
+  public void Copiar(ref int[] array, ref int[] arrayNovo)
+            {
+            Array.Copy(array, arrayNovo, array.Length);
+            }
+Console.WriteLine("Array original");
+op.ImprimirArray(array);
+
+op.Copiar(ref array,ref array2);
+
+Console.WriteLine("Array copiado");
+op.ImprimirArray(array2);
+````
+
+#### Verificar se um elemento existe dentro de um array
+
+```C#
+using colecoes.Helper;
+
+OperacoesArray  op = new OperacoesArray();
+
+int[] array = new int[5] { 4, 9, 1, 3, 2 };
+int[] array2 = new int[10];
+
+int valorProcurado = 3;
+bool existe = op.Existe(array, valorProcurado);
+
+if(existe)
+    Console.WriteLine($"O valor {valorProcurado} existe!");
+else
+    Console.WriteLine($"O valor {valorProcurado} não existe!");
+
+     public bool Existe(int[]array, int valor)
+        {
+            return Array.Exists(array, elemento => elemento == valor);
+        }
+```
+
+#### Verificar se todos elementos do array satisfazem uma determinada condição
+
+
+Utilizar metodo do array true for all, conforme código
+
+```#C
+public bool TodosMaiorQue(int[] array, int valor)
+        {
+            return Array.TrueForAll(array, elemento => elemento > valor);
+        }
+```
+#### Encontrar um elemento no array.
+
+Quando manipulamos array temos em mente que o valor default do array é zero
+Caso não acharmos nenhum valor o metodo retorna zero
+```C#
+ public int ObterValor(int[] array, int valor)// retorna um valor numérico que tem o valor do elemento passado na classe main
+        {
+            return Array.Find(array, element => element == valor);
+        }
+```
+
+#### Obter indice de um elemento o array
+``` C#
+  public int ObterIndice(int[]array, int valor)
+        {
+            return Array.IndexOf(array,valor);
+        }
+```
+Utilizando o metodo indexof o array retorna -1 quando não possui valor atribuido.
+
+#### Redimensionar o Array em tempo de execução
+Enviar o Array por referencia pois estamos manipulando o array.
+Lembrar sempre que o array é tem seu tamanho imutável ou seja essa função faz uma cópia do array em outra variável e mantem o nome
+```C#
+public void RedmensionarArray(ref int[] array, int novoTamanho )
+        {
+            Array.Resize(ref array,novoTamanho);
+        }
+```
+#### Convertendo um Array
+Faz a conversão completa de elemento a elemento 
+```C#
+public string[] ConverterParaArrayString(int[] array)
+        {
+            return Array.ConvertAll(array, elemento => elemento.ToString());//no Caso aqui é  a linha de conversão
+	}
+```
+### Coleções Genéricas
+
+Agrupam valores padronizados de vários tipos de dados, Objetos, String, Arrays, Etc.
+Algumas outras característcas:
+Facil de ser ordenado.
+Obtem valor por indice.
+Valores dinamicos.
+
+Basicamente é uma abstração de arrays, pois a lista trabalho com arrays internamente.
+
+Classes `System.Collection.Generic`
+
+Uma lista contem o identificador T que é genérico onde podemos colocar valores como String, Int, Object, etc.
+Podemos manipular os itens da lista utilizando métodos internos da estrutra de dados da coleção correspondente
+
+
+#### LIST - LISTA ()
+```C#
+List<string> estados = new List<string>();//inserindo elementos na lista
+
+### Adicionando Elementos
+
+estados.Add("SP");
+estados.Add("MG");
+estados.Add("BA");
+```
+
+##### Contando elementos e consultando lista
+```
+Console.WriteLine($"Quantidades de elementos na lista{estados.Count}");//Contando elementos da lista
+
+foreach(var item in estados)
+{
+    Console.WriteLine(item);//Consultando elementos da lista com foreach
+}
+
+
+estados.Remove("MG"); //removendo elemento da lista
+
+for (int i = 0;i<estados.Count; i++ )
+{
+    Console.WriteLine($"Indice {i}, Valor: {estados[i]}");// consultando elementos da lista com for
+}
+```
+----------------------
+Refatorando o Código podemos Criar uma classe
+
+para as operações da lista
+
+```C#
+
+    public class OperacoesLista
+    {
+
+        public void ImprimirListaString(List<string> lista)
+        {
+
+            for (int i = 0; i < lista.Count; i++)
+            {
+                Console.WriteLine($"Indice {i}, Valor: {lista[i]}");// consultando elementos da lista com for
+            }
+        }
+    }
+```
+
+//na main:
+
+`opLista.ImprimirListaString(estados);`
+
+##### Removendo elementos da lista
+
+Ao remover um item de uma lista, lembrar que a lista irá rearranjar seus indices, ou seja, se removido um item do meio
+todos os itens após tem seu indice decrementados de 1.
+```C#
+Console.WriteLine("Removendo elemento");
+estados.Remove("Mg");
+
+opLista.ImprimirListaString(estados);
+```
+
+##### Adicionar coleções na lista
+
+OperacoesLista opLista = new OperacoesLista();
+``` C#
+string[] EstadosArray = new string[2] { "SC", "MT" };
+
+List<string> estados = new List<string> { "SP", "MG", "BA" };//inserindo elementos na lista
+
+estados.AddRange(EstadosArray);  // Adciona os elementos do Array na Lista
+
+opLista.ImprimirListaString(estados);
+```
+
+Tendo uma coleção do mesmo tipo, podemos mesclar os elementos para a coleção lista.
+
+##### Adicionando elemento por índice.
+
+```
+estados.Insert(1, "RJ");
+```
+
+A linha de código coloca o valor RJ exatamente no Indice 1, depois de SP, antes de MG.
+
+
+### Coleções Específicas
+Possui um ordenamento na manipulação dos seus dados
+
+#### Queue - Fila (FIFO - FIRST IN FIRST OUT)
+
+Obedece a ordem de entrada, sempre o primeiro que entrou será o primeiro a sair, comparando com uma fila de mercado.
+
+![Fila](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Fila.png)
+
+##### Declaração da Fila
+
+`Queue<string> fila = new Queue<string>();`
+
+##### Adicionando um elemento na fila
+
+`fila.Enqueue("");`
+
+##### Removendo elemento da fila
+
+`fila.Dequeue("");`
+
+##### Metodo PEEK
+`fila.Peek()`
+Retorna um valor da frente da fila mas não remove
+
+##### Contando elementos da fila
+`fila.Count`
+
+##### Atendendo uma fila na prática.
+
+```C#
+Queue<string> fila = new Queue<string>();
+
+fila.Enqueue("Guilherme");
+fila.Enqueue("Priscila");
+fila.Enqueue("Edna");
+
+while (fila.Count > 0)
+{
+    Console.WriteLine($"Vez de: {fila.Peek()}");
+    Console.WriteLine( fila.Dequeue()+ " Atendido");
+}
+```
+
+
+
+
+#### Stack - Pillha (LIFO - LAST IN FIRST OUT) 
+
+Obedece a ordem de empilhamento, empre o ultimo a chegar será o primeiro a sair, comparado a uma pilha de livros.
+
+![Pilha](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Pilha.png)
+
+
+
+##### Empilhamento
+
+`pilhaLivros.Push(".NET")`
+
+Coloca livro na Pilha
+
+##### Consulta Quantidade da pilha
+
+`Console.WriteLine($"Quantidade de livros para leitura {pilhaLivros.Count}");`
+
+##### Remove o livro da pilha
+`Console.WriteLine($" {pilhaLivros.Pop()}, lido com sucesso.");`
+
+
+### Dictionary - Dicionários
+Dicionário é uma cocleção de chave e valor, que é um indice único que é armazenado em hash.
+Para acessarmos um dado daquela coleção usamos um código unico para aquele elemento.
+
+#### Declarando Dicionários
+
+`Dictionary<string, string> estados = new Dictionary<string, string>();`
+par de tipos de dados para acesso do dado
+
+#### Adcionando Dicionário
+
+`estados.Add("SP", "São Paulo"); `
+
+Para adicionar um dicionários temos que fornecer uma Chave e Um valor.
+Não podemos criar chaves repetidas.
+
+#### Lendo Dicionário
+```
+foreach (KeyValuePair<string, string> item in estados )
+{
+
+    Console.WriteLine($"Chave: {item.Key}, Valor:{item.Value}"); 
+
+
+}
+```
+
+#### Acessando valor 
+
+Para acessar um valor sempre temos que acessar pela chave.
+```
+string valorProcurado = "BA";
+Console.WriteLine(estados[valorProcurado]);
+```
+Sempre que passarmos a chave o algoritmo irá nos retornar o value.
+
+###Atualizando um valor
+
+Para alterar o valor precisamos passar a chave
+```
+string valorProcurado = "BA";
+estados[valorProcurado] = ("Atualização");
+Console.WriteLine(estados[valorProcurado]);
+```
+Trocou Bahia pela palavra Atualizaçao.
+
+#### Removendo um valor
+
+estados.Remove(valorProcurado); // A chave que remove o valor.
+
+#### Saber se uma chave existe antes de tentar acessa-la
+
+Para que não haja bug em tempo compilação temos o metodo TryGetValue, para confirmar se existe a chave do valor que eu estou tentando acessar.
+
+```
+if(estados.TryGetValue(valorProcurado, out string estadoEncontrado))// Chave definida durante o programa
+{
+    Console.WriteLine(estadoEncontrado);
+}else
+{
+    Console.WriteLine($"Chave {valorProcurado} não existe no dicionário! ");
+}
+```
+O metodo TryGetValue permite que se haja erro na chave o programa não gere erro em tempo de compilação.
+
+
+### Operações LINQ - Assistir aulas novamente e refazer anotações
+
+Language-Interated Query
+
+
+
+
+
+
+
+​    
+
+
+## Construtores
+
+Construtores são métodos da classe que permitem o instanciamento da classe.
+
+Por default quando não criamos o construtor de uma classe o C# cria a classe com um construtor vazio
+
+Para montar  um construtor devemos fazer o metodo com exatamente o nome a classe
+
+### Construtor Padrão
+
+O Construtor padrão obedece as regras de código conforme a seguir:
+
+```C#
+public NomeDaClasse()
+(
+)
+
+
+```
+
+ a Classe é construída sem parâmetros para que caso desejamos colocar os atributos depois, seja possível.
+
+
+
+### Construtor de classe
+
+O construtor tem a função de exigir valores default para a classe instanciada
+
+```c#
+private string nome;
+private int idade
+    
+    Public Pessoa(string nome, int idade)// Quando na main um objeto for instanciado programa permitirá utilizar esses parametros para iniciar o objeto;
+    (
+		this.nome = nome; // this. siginifca que a string de dentro do programa recebe o valor que vem da main.prg
+    	this.idade = idade;
+	)
+
+
+```
+
+Caso queiramos limitar o instanciamento da classe para que seja feito somente já passando os valores é só deletar o construtor padrão.
+
+### Getters e Setters
+
+Os metodos gets e sets são formas controladas de adquirir ou enviar valores a um objeto.
+
+Usando métodos Set, podemos impedir que valores não permitidos sejam armazenados dentro de uma variável, por exemplo, uma variável int receber valores somente se o valor que entrar via método seja inteiro.
+
+```C#
+public class Data
+    
+    
+    private int mes;
+    public int GetMes()
+	{
+    return this.mes; //Retorna sempre o mês da variável interna da classe
+    }
+	
+	public void SetMes(int mes)
+    {
+        if (mes>0 && mes<= )
+            this.mes=mes; // recebe valor somente se dentro do intervalo válido para numero de meses por ano
+    }
+```
+
+### Propriedades
+
+Para que possamos acessar os atributos dos métodos o C# tem a função propriedade( atalho prop), essa função permite que sejam gerados getters e setters automaticamente.
+
+```c#
+"prop" Propriedade;
+public int Propriedade { get; set;};
+
+Main
+{
+    objeto.propriedade = valor ; // na main quando passamos valor para uma propriedade essa propriedade aplica um get automáticamente.
+    Console.WriteLine(objeto.propriedade); //Quando a propriedade tem um perfil de saída ela gera um valor de saída automáticamente.
+   
+}
+
+
+    
+    
+```
+
+
+
+```C# 
+//Podemos gerar validações para esses getters e setters automáticos.
+
+get
+{
+    return this.mes =value; //Onde value é o valor enviado pela main depois do sinal de igual
+}
+set/// valida o set.
+    if(value>0&&value<)
+    {
+        this.mes= value;
+        this.mesValido= true;
+    }
+```
+
+
+
+
 
 
 
@@ -413,28 +946,28 @@ exemplo
 
 
 
-    
-    
-        public class ref 
-        {
-        static void Inverter(ref int x, ref int y)
-        {
-        int temp = x
-        x= y;
-        y = temp;
-        }
-        public static void Inverter()
-        {
-        int i=1,j=2;
-        Inverter(ref i, ref j)
-        System.Console.WriteLine($"{i} e {j}")
-        
-        // com ref o console imrpimirá, 2 e 1
-        // sem ref o console imprimirá, 1 e 2
-        }
-            
-         }
-    
+​    
+​    
+​        public class ref 
+​        {
+​        static void Inverter(ref int x, ref int y)
+​        {
+​        int temp = x
+​        x= y;
+​        y = temp;
+​        }
+​        public static void Inverter()
+​        {
+​        int i=1,j=2;
+​        Inverter(ref i, ref j)
+​        System.Console.WriteLine($"{i} e {j}")
+​        
+​        // com ref o console imrpimirá, 2 e 1
+​        // sem ref o console imprimirá, 1 e 2
+​        }
+​            
+​         }
+
 
 Ou seja o método ref aponta para onde quero recebe a variável 
 
@@ -454,8 +987,9 @@ Utilizar o Out é necessário caso eu queria fixar no método construtor da clas
     	Dividir(10,3, out int resultado, out int resto)
     
     }
-        
-    
+
+
+​    
 
 
 
@@ -482,23 +1016,23 @@ na prática temos o código:
 
 
 ​    
-            foreach( var retorno in retornoCaminho)
-            {
-                Console.WriteLine(retorno);
-            }
-            // a variável var retornoCaminho recebe o caminho instantâneo do valor do diretório e joga dentro do for each, cada vez que houver um diretório valido o for each realiza a impressão do caminho que está na variável retorno.
-        }
-    
-    }
-    
-    Programa Main
-    
-    {
-    
-    var caminho = "C:\\PastaTeste"; // cria um caminho base para ser examinado
-    FileHelper helper = new FileHelper();
-    helper.ListarDiretorios(caminho);// aciona o método com o caminho gerado para que o diretório faça a busca
-    
+​            foreach( var retorno in retornoCaminho)
+​            {
+​                Console.WriteLine(retorno);
+​            }
+​            // a variável var retornoCaminho recebe o caminho instantâneo do valor do diretório e joga dentro do for each, cada vez que houver um diretório valido o for each realiza a impressão do caminho que está na variável retorno.
+​        }
+​    
+​    }
+​    
+​    Programa Main
+​    
+​    {
+​    
+​    var caminho = "C:\\PastaTeste"; // cria um caminho base para ser examinado
+​    FileHelper helper = new FileHelper();
+​    helper.ListarDiretorios(caminho);// aciona o método com o caminho gerado para que o diretório faça a busca
+​    
     }
 
 
@@ -511,23 +1045,23 @@ o caractere * é coringa, que varre tudo, se colocarmos qualquer coisa por exemp
 
 
 ​       
-       public  void CriarDiretorio(string caminho)
-        {
-           var retorno = Directory.CreateDirectory(caminho);
-            Console.WriteLine(retorno.FullName);
-        }
-      ----------------------------  
-           using System.IO;
-       
-       //Para utilizar a biblioteca Path é necessário sempre importar o system.Io;
-        main{
-        
-        helper.CriarDiretorio(Path.Combine(caminho, "PastaTeste3", "Subpasta Teste3"));
-        
-        //Path combine é uma forma de concatenar endereços de diretório, caso um diretório não exista (caso "PastaTest3") o programa irá cria-lo para criar o subdiretório.
-        
-        // helper.CriarDiretorio  é o metodo de criação de diretório, onde caminho é o caminho utilizado é o caminho normal onde se quer criar as pastas e depois da virgula são as pastas criadas (neste contexto)
-        
+​       public  void CriarDiretorio(string caminho)
+​        {
+​           var retorno = Directory.CreateDirectory(caminho);
+​            Console.WriteLine(retorno.FullName);
+​        }
+​      ----------------------------  
+​           using System.IO;
+​       
+​       //Para utilizar a biblioteca Path é necessário sempre importar o system.Io;
+​        main{
+​        
+​        helper.CriarDiretorio(Path.Combine(caminho, "PastaTeste3", "Subpasta Teste3"));
+​        
+​        //Path combine é uma forma de concatenar endereços de diretório, caso um diretório não exista (caso "PastaTest3") o programa irá cria-lo para criar o subdiretório.
+​        
+​        // helper.CriarDiretorio  é o metodo de criação de diretório, onde caminho é o caminho utilizado é o caminho normal onde se quer criar as pastas e depois da virgula são as pastas criadas (neste contexto)
+​        
         }
 
 #### Apagar Diretório
@@ -542,12 +1076,12 @@ Para apagar diretório temos:
 
 
 ​       
-        public void ApagarDiretorio(string caminho, bool apagarArquivos)
-            {
-                Directory.Delete(caminho, apagarArquivos);
-             }
-             
-            // o Metodo delete apaga diretório, mas é necessário uma confirmção Booleana no metodo para que seja dada a permissão para apagar o arquivo de fato.
+​        public void ApagarDiretorio(string caminho, bool apagarArquivos)
+​            {
+​                Directory.Delete(caminho, apagarArquivos);
+​             }
+​             
+​            // o Metodo delete apaga diretório, mas é necessário uma confirmção Booleana no metodo para que seja dada a permissão para apagar o arquivo de fato.
 
 
 Observação: quando algo é apagado no C# ele é excluído permanentemente, então é necessário cuidado extremo para apagar pastar e diretório no C#
@@ -580,17 +1114,17 @@ Para filtrar a busca por tipo de arquivo utilizamos "*.extensão".
 
 
 ​       
-       main
-       {
-       helper.CriarArquivoTexto(Path.Combine(caminho,"arquivo teste.txt"),  "teste de escrita de arquivo"); // teste de escrita vai no corpo to texto.
-       }
-       
-       public void CriarArquivoTexto(string caminho, string conteudo)
-            {
-                if(!File.Exists(caminho))// if assegura que o testo não será sobreescrito.
-                 File.WriteAllText(caminho, conteudo);
-                 }
-        }
+​       main
+​       {
+​       helper.CriarArquivoTexto(Path.Combine(caminho,"arquivo teste.txt"),  "teste de escrita de arquivo"); // teste de escrita vai no corpo to texto.
+​       }
+​       
+​       public void CriarArquivoTexto(string caminho, string conteudo)
+​            {
+​                if(!File.Exists(caminho))// if assegura que o testo não será sobreescrito.
+​                 File.WriteAllText(caminho, conteudo);
+​                 }
+​        }
 
 
 #### Criar texto com Stream
@@ -602,24 +1136,24 @@ Obs: O uso da stream é necessário para que não escrevamos tudo de uma vez no 
 
 
 ​       
-       main
-       {
-       var listaString = new List<string> { "linha1", "Linha2", "linha3" }; // Criar conteudo na lista de strings
-       helper.CriarArquivoTextoStream(Path.Combine(caminho, "arquivo teste-stream.txt"), listaString); // cria um arquivo stream para receber texto.
-       }
-       
-      public void CriarArquivoTextoStream(string caminho, List<string> conteudo)// O conteúdo da stream deve ser uma lista de Strings
-            {
-                using (var stream = File.CreateText(caminho)) //using permite que o arquivo seja inicializado somente quando usado, poupando espaço de memória.
-                
-                {
-                    foreach (var linha in conteudo)
-                    {
-                        stream.WriteLine(linha); //escreve stream linha a linha.
-                    }
-                }
-    
-    		}
+​       main
+​       {
+​       var listaString = new List<string> { "linha1", "Linha2", "linha3" }; // Criar conteudo na lista de strings
+​       helper.CriarArquivoTextoStream(Path.Combine(caminho, "arquivo teste-stream.txt"), listaString); // cria um arquivo stream para receber texto.
+​       }
+​       
+​      public void CriarArquivoTextoStream(string caminho, List<string> conteudo)// O conteúdo da stream deve ser uma lista de Strings
+​            {
+​                using (var stream = File.CreateText(caminho)) //using permite que o arquivo seja inicializado somente quando usado, poupando espaço de memória.
+​                
+​                {
+​                    foreach (var linha in conteudo)
+​                    {
+​                        stream.WriteLine(linha); //escreve stream linha a linha.
+​                    }
+​                }
+​    
+​    		}
 
 #### Adicionar texto e texto Stream
 
@@ -641,7 +1175,7 @@ Para adicionar texto em arquivos basta alterar as propriedades de Creat para App
                     }
                 }
              }
-            
+
 
 #### Lendo arquivos
 
@@ -675,40 +1209,41 @@ Para adicionar texto em arquivos basta alterar as propriedades de Creat para App
 
 #### Movendo arquivos
 
-      
+
         main
         {	 var caminho = "C:\\PastaTeste";
        		 var novocaminho = Path.Combine(caminho, "PastaTeste3");
        		 helper.MoverArquivo(Path.Combine(caminho, "arquivo teste.txt"), Path.Combine(novocaminho, "arquivo teste.txt"));
     
         }
-        
-        
-        public void MoverArquivo(string caminho, string novocaminho)
-        {
-            File.Move(caminho, novocaminho);
-        }
-    
+
+
+​        
+​        public void MoverArquivo(string caminho, string novocaminho)
+​        {
+​            File.Move(caminho, novocaminho);
+​        }
+
 #### Copiar arquivo
 
     public void CopiarArquivo(string caminho, string novocaminho)
         {
             File.Copy(caminho, novocaminho);
         }
-    
+
 
 
 Por padrão o método copy não sobrescreve o arquivo caso seu nome seja duplicado. Caso desejar sobrescrever o método copy tem sobrecarga com valor booleano:
 
-    
+
         public void CopiarArquivo(string caminho, string novocaminho bool sobrescrever)
         {
             File.Copy(caminho, novocaminho, sobrescrever);
         }
-    
+
 #### Deletar arquivos 
 
-     
+
         public void DeletarArquivo(string caminho)
         {
             File.Delete(caminho);
