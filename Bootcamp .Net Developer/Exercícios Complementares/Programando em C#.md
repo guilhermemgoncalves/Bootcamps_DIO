@@ -153,10 +153,10 @@ namespace Dio
 ​    class DIO {
 ​    static void Main(string[] args) { 
 ​    
-     string str;
-            while((str=Console.ReadLine())!= null)
-            {
-                
+​     string str;
+​            while((str=Console.ReadLine())!= null)
+​            {
+​                
                     int x = int.Parse(str);
                     if ( x<=0        )
                     {
@@ -181,8 +181,8 @@ namespace Dio
 ​    
 ​    using System; 
 ​    
-    class DIO{
-    
+​    class DIO{
+​    
      {static void Main(string[] args) { 
     
     int x = int.Parse(Console.ReadLine());
