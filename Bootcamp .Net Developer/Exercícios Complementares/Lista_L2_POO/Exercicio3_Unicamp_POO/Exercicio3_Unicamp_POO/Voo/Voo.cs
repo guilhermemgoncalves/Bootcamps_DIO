@@ -16,6 +16,8 @@ namespace Exercicio3_Unicamp_POO.Voo
         private Horario horario;
         private int numPassageiros = 0 ;
         private int idVoo;
+        private bool[] idCadeira = new bool[100];
+
         
 
         public Voo(Horario horario, Data data,  int idVoo)
@@ -28,6 +30,64 @@ namespace Exercicio3_Unicamp_POO.Voo
          
 
         }
+        public int ProximoLivre(int numCadeira)
+        {
+            int i;
+            int proximoLivre = 0;
+            for (i=0; i >=  idCadeira.Length; i++)
+            {
+                if (idCadeira[i] == false)
+                {
+                    proximoLivre = i + 1;
+                }                
+            }
+            return proximoLivre;
+
+        }
+
+        public bool Verifica (int numCadeira)
+        {
+            if (idCadeira[numCadeira] == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }   
+        public bool Ocupa (int numCadeira)
+        {
+            if (idCadeira[numCadeira] == true)
+            {
+                return true;
+            }
+            else
+            {
+                idCadeira[numCadeira] = true;
+                numPassageiros++; 
+                return false;
+            }
+        }
+        public int Vagas()
+        {
+
+            return 100-numPassageiros;
+
+        }
+        public Data GetData()
+        {
+            return data;
+        }
+        public int GetVoo()
+        {
+            return this.idVoo;
+        }
+        public Voo Clone(Voo voo)
+        {
+            Voo vooClone = voo;
+            return vooClone;
+        }
 
         public override string ToString()
         {
@@ -36,11 +96,7 @@ namespace Exercicio3_Unicamp_POO.Voo
 
         }
 
-        public int GetVoo()
-        {
-            return this.idVoo;
-        }
-
+       
         
 
 

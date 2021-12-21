@@ -11,29 +11,48 @@ using Exercicio2_Unicamp_POO;
 using Exercicio3_Unicamp_POO.Datas;
 using Exercicio3_Unicamp_POO.Voo;
 
-Console.WriteLine("");
+Console.WriteLine("-------------");
 Console.WriteLine("DIO Airlines");
-Console.WriteLine("");
+Console.WriteLine("-------------");
 
 
-Console.WriteLine("Digite o numero do vôo para cadastro: ");
-int entradaIdVoo  = int.Parse(Console.ReadLine());
-Console.WriteLine("Digite o dia de partida do voo: ");
-int dia = int.Parse(Console.ReadLine());
-Console.WriteLine("Digite o mes de partida do voo: ");
-int mes = int.Parse(Console.ReadLine());
-Console.WriteLine("Digite a hora de partida do voo: ");
-int hora = int.Parse(Console.ReadLine());
-Console.WriteLine("Digite os minutos de partida do voo: ");
-int minuto = int.Parse(Console.ReadLine());
+switch(int.Parse(Console.ReadLine()))
+    {
 
 
-Data entradaData = new Data(dia: dia, mes: mes);
-Horario entradaHorario = new Horario(hora, minuto);
+
+    default:
+    Console.WriteLine("Opção Invalida");
+    break;
+}
 
 
-Voo voo = new (horario: entradaHorario, data: entradaData, idVoo:entradaIdVoo);
-
-Console.WriteLine(voo.ToString());
 
 
+
+    
+
+void CadastraVoo()
+
+{
+    Console.WriteLine("Digite o numero do vôo para cadastro: ");
+    int entradaIdVoo = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite o dia de partida do voo: ");
+    int dia = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite o mes de partida do voo: ");
+    int mes = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite a hora de partida do voo: ");
+    int hora = int.Parse(Console.ReadLine());
+    Console.WriteLine("Digite os minutos de partida do voo: ");
+    int minuto = int.Parse(Console.ReadLine());
+
+
+    Data entradaData = new Data(dia: dia, mes: mes);
+    Horario entradaHorario = new Horario(hora, minuto);
+
+
+    Voo voo = new(horario: entradaHorario, data: entradaData, idVoo: entradaIdVoo);
+
+    Console.WriteLine(voo.ToString());
+
+}
