@@ -1589,16 +1589,16 @@ Console.WriteLine("Inserir Nova Série: ");
 ```
 //Faz a Varredura do Enum e mostra as opções para o usuário.
 
-``` 
+```
 Console.WriteLine("Considerando as opções acima digite um gênero: ");
     int entradaGenero = int.Parse(Console.ReadLine());
 
     Console.WriteLine("Digite o título da Série: ");
     string entradaTitulo = Console.ReadLine();
-
+    
     Console.WriteLine("Digite o ano de inicio da série: ");
     int entradaAno = int.Parse(Console.ReadLine());
-
+    
     Console.WriteLine("Digite a descrição da série: ");
     string entradaDescricao = Console.ReadLine();
 ```
@@ -1621,18 +1621,18 @@ void AtualizarSerie()
     }
     Console.WriteLine("Considerando as opções acima digite um gênero: ");
     int entradaGenero = int.Parse(Console.ReadLine());
-
+    
     Console.WriteLine("Digite o título da Série: ");
     string entradaTitulo = Console.ReadLine();
-
+    
     Console.WriteLine("Digite o ano de inicio da série: ");
     int entradaAno = int.Parse(Console.ReadLine());
-
+    
     Console.WriteLine("Digite a descrição da série: ");
     string entradaDescricao = Console.ReadLine();
-
+    
     Serie atualizaSerie = new Serie(id: indiceSerie, genero: (Genero)entradaGenero, titulo: entradaTitulo, ano: entradaAno, descricao: entradaDescricao);
-
+    
     repositorio.Atualiza(indiceSerie, atualizaSerie);
 
 }
@@ -1672,7 +1672,7 @@ public bool RetornaExcluido()
         {
             return this.Excluido;
         }
-```        
+```
 Complementar na main no metodo de ListarSeries uma condicional que quando o item estiver excluído ele não é listado
 
 ```
@@ -1695,3 +1695,49 @@ void ListarSeries()
     }
 }
 ```
+
+# Introdução a API e métodos HTTPs - REST
+
+
+
+## Http Metods
+
+### Get
+
+Sempre obtém dados
+
+EndPoint: /api/dev/user
+
+### Post
+
+Cria um novo registro ou recurso
+
+EndPoint: /api/dev/user
+
+### Put
+
+Atualiza um registro existente
+
+EndPoint: /api/dev/user/{id}
+
+### Delete
+
+Remove um registro existente
+
+EndPoint: /api/dev/user/{id}
+
+
+
+### Status comuns 
+
+200 = Ok
+
+401= Unauthroized
+
+403 = Forbidden
+
+404 = Not Found
+
+500 = Internal Server Error
+
+504 = Gateway Timeout

@@ -5,7 +5,22 @@
       "ProjectGuid": "2d70a7a2-a280-43d7-8ac6-c4add1a2048e",
       "DisplayName": "DIO.Series",
       "ColorIndex": 0
+    },
+    "7dad08a3-d48f-435d-8a35-f4d43698903a": {
+      "ProjectGuid": "7dad08a3-d48f-435d-8a35-f4d43698903a",
+      "DisplayName": "DIO.Series.Console",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    },
+    "93077e3a-2a8e-4398-8ad4-6c5b35043890": {
+      "ProjectGuid": "93077e3a-2a8e-4398-8ad4-6c5b35043890",
+      "DisplayName": "DIO.Series.Web",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

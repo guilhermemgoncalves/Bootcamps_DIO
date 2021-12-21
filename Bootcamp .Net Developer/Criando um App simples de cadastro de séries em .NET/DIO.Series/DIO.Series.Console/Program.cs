@@ -1,7 +1,4 @@
-﻿
-
-
-using DIO.Series;
+﻿using DIO.Series;
 
 SerieRepositorio repositorio = new SerieRepositorio();
 string opcaoUsuario = ObterOpcaoUsuario();
@@ -44,7 +41,7 @@ void VisualizarSerie()
     int indiceSerie = int.Parse(Console.ReadLine());
     var serie = repositorio.RetornaPorId(indiceSerie);
     Console.WriteLine(serie);
-    
+
 }
 
 void ExcluirSerie()
@@ -147,7 +144,6 @@ string ObterOpcaoUsuario()
     Console.WriteLine();
     return opcaoUsuario;
 }
-
 
 
 

@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIO.Series", "DIO.Series\DIO.Series.csproj", "{2D70A7A2-A280-43D7-8AC6-C4ADD1A2048E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIO.Series", "DIO.Series\DIO.Series.csproj", "{2D70A7A2-A280-43D7-8AC6-C4ADD1A2048E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIO.Series.Console", "DIO.Series.Console\DIO.Series.Console.csproj", "{7DAD08A3-D48F-435D-8A35-F4D43698903A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIO.Series.Web", "DIO.Series.Web\DIO.Series.Web.csproj", "{93077E3A-2A8E-4398-8AD4-6C5B35043890}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2D70A7A2-A280-43D7-8AC6-C4ADD1A2048E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D70A7A2-A280-43D7-8AC6-C4ADD1A2048E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D70A7A2-A280-43D7-8AC6-C4ADD1A2048E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAD08A3-D48F-435D-8A35-F4D43698903A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAD08A3-D48F-435D-8A35-F4D43698903A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAD08A3-D48F-435D-8A35-F4D43698903A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAD08A3-D48F-435D-8A35-F4D43698903A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93077E3A-2A8E-4398-8AD4-6C5B35043890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93077E3A-2A8E-4398-8AD4-6C5B35043890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93077E3A-2A8E-4398-8AD4-6C5B35043890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93077E3A-2A8E-4398-8AD4-6C5B35043890}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
