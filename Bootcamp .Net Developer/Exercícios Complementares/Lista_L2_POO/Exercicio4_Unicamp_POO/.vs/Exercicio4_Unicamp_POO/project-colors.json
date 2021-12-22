@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "07d68e34-0c3c-4375-8a91-fed90419b23d": {
+      "ProjectGuid": "07d68e34-0c3c-4375-8a91-fed90419b23d",
+      "DisplayName": "Exercicio4_Unicamp_POO",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

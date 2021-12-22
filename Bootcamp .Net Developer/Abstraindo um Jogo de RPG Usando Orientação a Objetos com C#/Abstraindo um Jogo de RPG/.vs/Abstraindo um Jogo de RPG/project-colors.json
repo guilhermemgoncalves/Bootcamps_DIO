@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a0713cf0-b65d-44d9-a4c6-77e6037b87e9": {
+      "ProjectGuid": "a0713cf0-b65d-44d9-a4c6-77e6037b87e9",
+      "DisplayName": "Abstraindo um Jogo de RPG",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

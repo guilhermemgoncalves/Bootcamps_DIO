@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Priscila\\.nuget\\packages\\": {}
+    "C:\\Users\\guilh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Priscila\\Área de Trabalho\\colecoes\\colecoes\\colecoes.csproj",
+      "projectUniqueName": "C:\\Drives\\Trabalho\\DIO\\Bootcamps_DIO\\Bootcamp .Net Developer\\Fundamentos de Coleções e LINQ com .NET\\colecoes\\colecoes\\colecoes.csproj",
       "projectName": "colecoes",
-      "projectPath": "C:\\Users\\Priscila\\Área de Trabalho\\colecoes\\colecoes\\colecoes.csproj",
-      "packagesPath": "C:\\Users\\Priscila\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Priscila\\Área de Trabalho\\colecoes\\colecoes\\obj\\",
+      "projectPath": "C:\\Drives\\Trabalho\\DIO\\Bootcamps_DIO\\Bootcamp .Net Developer\\Fundamentos de Coleções e LINQ com .NET\\colecoes\\colecoes\\colecoes.csproj",
+      "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
+      "outputPath": "C:\\Drives\\Trabalho\\DIO\\Bootcamps_DIO\\Bootcamp .Net Developer\\Fundamentos de Coleções e LINQ com .NET\\colecoes\\colecoes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Priscila\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\guilh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

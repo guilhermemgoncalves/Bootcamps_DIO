@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio4_Unicamp_POO", "Exercicio4_Unicamp_POO\Exercicio4_Unicamp_POO.csproj", "{07D68E34-0C3C-4375-8A91-FED90419B23D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07D68E34-0C3C-4375-8A91-FED90419B23D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D68E34-0C3C-4375-8A91-FED90419B23D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D68E34-0C3C-4375-8A91-FED90419B23D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D68E34-0C3C-4375-8A91-FED90419B23D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD4B8D84-D948-40B7-9545-A5E6887F99A4}
+	EndGlobalSection
+EndGlobal

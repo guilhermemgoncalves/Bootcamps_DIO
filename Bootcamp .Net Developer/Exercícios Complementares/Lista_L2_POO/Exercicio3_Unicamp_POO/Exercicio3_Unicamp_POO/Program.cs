@@ -14,22 +14,41 @@ using Exercicio3_Unicamp_POO.Voo;
 Console.WriteLine("-------------");
 Console.WriteLine("DIO Airlines");
 Console.WriteLine("-------------");
+string menuLooping = "";
+
+while (menuLooping != "X")
+{
+    MenuChamadas();
+    menuLooping = Console.ReadLine().ToUpper();
 
 
-switch(int.Parse(Console.ReadLine()))
+    switch (menuLooping)
     {
+        case "1":
+            CadastraVoo();
+            break;
 
 
+        case "X":
+            Console.WriteLine("Programa Encerrado!");
+            break;
 
-    default:
-    Console.WriteLine("Opção Invalida");
-    break;
+        default:
+            Console.WriteLine("Opção Invalida");
+            break;
+    }
+
+
 }
 
+void MenuChamadas()
+    {
+    Console.WriteLine("MENU");
 
-
-
-
+    Console.WriteLine("1- Cadastrar Vôos");
+    Console.WriteLine("X- Sair");
+        
+    }
     
 
 void CadastraVoo()

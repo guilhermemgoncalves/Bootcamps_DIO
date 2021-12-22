@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Exercicio4_Unicamp_POO/1.0.0": {
+        "runtime": {
+          "Exercicio4_Unicamp_POO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Exercicio4_Unicamp_POO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
