@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Exercicio4_Unicamp_POO": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Drives\\Trabalho\\DIO\\Bootcamps_DIO\\Bootcamp .Net Developer\\Exercícios Complementares\\Lista_L2_POO\\Exercicio4_Unicamp_POO\\Exercicio4_Unicamp_POO\\"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {},
+      "distributionName": ""
+    }
+  }
+}

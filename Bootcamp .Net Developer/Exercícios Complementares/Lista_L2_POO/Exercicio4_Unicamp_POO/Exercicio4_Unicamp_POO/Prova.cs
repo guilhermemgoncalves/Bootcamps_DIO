@@ -22,6 +22,7 @@ namespace Exercicio4_Unicamp_POO
 
         public int Acertos()
         {
+            acertos = 0;
             
             for (numeroQuestao = 0; numeroQuestao < respostaQuestao.Length; numeroQuestao++)
             {
@@ -34,11 +35,11 @@ namespace Exercicio4_Unicamp_POO
         }
         public double Nota()
         {
-            
 
 
+            nota = 0;
             for (numeroQuestao = 0; numeroQuestao < respostaQuestao.Length; numeroQuestao++)
-            {
+            {   
                 if (gabarito.respostaQuestaoG[numeroQuestao] == respostaQuestao[numeroQuestao])
                 {
                     if (numeroQuestao < 10)
@@ -50,7 +51,7 @@ namespace Exercicio4_Unicamp_POO
                         nota += 1;
                     }
                 }
-                
+              
             }
 
 

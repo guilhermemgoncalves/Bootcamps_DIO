@@ -5,6 +5,8 @@ Gabarito gabarito = new Gabarito();
 Prova prova = new Prova(gabarito);
 string menu = "";
 AlunoRepositorio repositorio = new();
+Aluno alunoAtual = new (0.0, 0, "", 0, prova);
+
 
 
 while (menu !="x")
@@ -20,10 +22,11 @@ while (menu !="x")
             break;
         case "2":
             Console.WriteLine("2 - Lista: ");
-            repositorio.Lista();
+            ListaAlunos();
             break;
         case "3":
-            Console.WriteLine("3 - Avaliação por aluno");
+            Console.WriteLine("3 - Maior");
+            Maior(alunoAtual);
             break;
         default:
             Console.WriteLine("Opção Invalida");
@@ -71,7 +74,33 @@ void InserirProva()
 
     Console.WriteLine(aluno);
     repositorio.Insere(aluno);
+    alunoAtual = aluno;
+   
     
 }
 
 
+void ListaAlunos()
+{
+    foreach (var alunos in repositorio.Lista())
+    {
+        Console.WriteLine($"Nº:{alunos.RetornaId()}. {alunos.RetornaNome()} -  Nota: {alunos.RetornaNota()}, Acertos: {alunos.RetornaAcertos()}" );
+    }
+
+}
+
+
+void Maior(Aluno alunoAtual)
+{
+    var alunoMaior  = alunoAtual;   
+
+    foreach (var alunos in repositorio.Lista())
+    {
+       
+        if (alunos.RetornaNota() > alunoMaior.RetornaNota())
+        {
+             alunoMaior = alunos;
+        }        
+    }
+
+}
