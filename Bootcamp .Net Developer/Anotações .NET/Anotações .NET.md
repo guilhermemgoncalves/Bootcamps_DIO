@@ -1,4 +1,4 @@
-# Anotações .NET
+Anotações .NET
 
 # O que é o .NET
 
@@ -1698,7 +1698,104 @@ void ListarSeries()
 
 # Introdução a API e métodos HTTPs - REST
 
+## Protocolo HTTP
 
+HTTP - HyperText Transfer Protocol
+
+Browser  -> Inplementa o Cliente HTTP
+Servidor - Host objetos WEB 
+
+Objetos é tudo que faz a pagina funcionar, textos, links, imagens, etc.
+
+A função do Cliente HTTP é evniar mensagens para o servidor requisitando objetos web - HTTP Request
+
+O Servidor Web responde as mensagens via TCP - Response HTTP.
+
+O Http obdece a arquitetura cliente/servidor, onde as duas camadas de operações são segmentadas.
+O servidor é responsável por fazer toda a lógica a partir das requisições que ele recebe, sem precisar se preocupar com a parte de controle da aplicação web
+O Cliente por sua vez implementa somente a requisições, ou seja, manipula os dados em sua camada de interface através das responses do servidor
+
+o HTTP é um protocolo stateless.
+
+O servidor não armazena o estado do cliente e responde apenas os dados solicitados pelo cliente.
+
+
+Exemplo de resquest x response
+
+![image-20220120132523848](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\ExemplosHttpRqt_Rsp)
+
+ ### Estrutura do request line 
+
+Conforme a imagem acima o request line tem alguns dados padrão.
+
+linha 1 - Um Get que é uma ação referente ao metodo HTTP/ endereço onde  a ação será executada. Versão do Http Utilizada
+
+linha 2 - Host é local onde está hospedado os dados da minha requisição (por exemplo um site).
+
+Linha 3 - Tipo de conexão TCP.
+
+Linha 4 - Como (Que browser foi feito a requisição
+
+Linha 5 - Qual a linguagem de preferencia do cliente
+
+
+
+![image-20220120133358868](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\MensagensHttp)
+
+90% das requisições são feitas utilizando o metodo get.
+
+### Estrutura da Response Line
+
+![image-20220120133831203](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\EstruturaRepsoneLines)
+
+Bloco 1 - Linha do status representa o status da resposta via servidor - 200 / 404 - E suas respectivas mensagens, Ok, erro, etc.
+
+![image-20220120135555869](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\StatusCode)
+
+Bloco 2 - Header Lines -  Traz um cabeçalho de metadados contendo informações da requisição como data, hora, etc.
+
+Bloco 3 - Entity Body (Não está presente em metodo Get)
+
+###  Mensagem entre Cliente/Servidor
+
+Sequencia Metodo HTTP GET
+
+![image-20220120140805003](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\MENSAGEM HTTPGET)
+
+1. Cliente envia requisição Get Http com o formato "Mensagem Http request ", para um site (ex: www.amazon.com), requisitando objetos web
+    ![image-20220120140523927](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\HttpRequestGet)
+
+2. O servidor procura a pagina ou os dados requisitados pelo Cliente em seus arquivos, bancos de dados e diretórios
+
+3. Quando o dado for achado pelo servidor ele envia uma mensagem de Http - response - contendo os dados requisitados pelo cliente
+
+   ![image-20220120140647190](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\HttpResponseGet)
+
+Sequencia Metodo Get
+
+A diferença entre o método get e o post é que o método GET contem no seu corpo os dados de para ser armazenado no banco de dados que é atualizado pelo servidor, ente método é muito útil para cadastro de pessoas por exemplo.
+
+1. Cliente envia a requisição com um pacote de dados para ser atualizada via HTTP Post
+
+   ![image-20220120150921191](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Request HttpPost)
+
+2. Os dados são atualizados no banco de dados pelo servidor
+    ![image-20220120151217438](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\MensagemHttpPost)
+3. O servidor retorna uma response com os metadados da atualização dos dados e a mensagem de HTTP status.  
+
+  ![image-20220120151414731](C:\Users\guilh\AppData\Roaming\Typora\typora-user-images\image-20220120151414731.png)
+
+### Cookies
+
+Apesar ser stateless o protocolo Http contem cookies que são objetos de transferência de dados que servem para obter dados do usuário, esses dados servem para personalizar as experiencia do usuário do Website como um todo.
+
+![image-20220120151705561](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Cookies)
+
+
+
+![image-20220120151917234](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\ComponentesCookies)
+
+Os Cookies ficam salvo tanto no browser (Cliente) e Servidor(DB)
 
 ## Http Metods
 
@@ -1721,7 +1818,7 @@ Atualiza um registro existente
 EndPoint: /api/dev/user/{id}
 
 ### Delete
-
+.
 Remove um registro existente
 
 EndPoint: /api/dev/user/{id}
@@ -1741,3 +1838,55 @@ EndPoint: /api/dev/user/{id}
 500 = Internal Server Error
 
 504 = Gateway Timeout
+
+## O que são APIs? 
+
+Application Program Interface, são um conjuntos de métodos e interfaces que permitem que o programador desenvolva um software seguindo uma metodologia, mas sem precisar saber o que acontece no código fonte. A função da API é trazer um molde para uma aplicação de forma a facilitar o desenvolvimento de um software ou WebApp.
+
+No contexto web quem poderá fazer a comunicação cliente/servidor é a API, controlando as requisições e respostas.
+
+São funções básicas de uma API: Acesso a dados, Esconder complexidade, Estender funcinalidades, Segurança
+
+## Desenvolvimento ASP.NET MVC
+
+### Entity Framework
+
+É uma interface que aplica todos os principais dados que um desenvolvedor precisa criar para a manipulação de um objeto e para acessar o banco de dados.
+
+#### Database First
+
+Utilizar o entity Frameword no modo Database first é necessário quando o banco de dados foi gerado antes da aplicação e precisamos fazer o carregamento do banco de dados na aplicação e parear com o a modelagem
+
+#### Model First
+
+Model First é um modo que geramos um modelo através do EDM designer e depois criamos as classes a partir do modelo gerado
+
+#### Code First
+
+É um tipo que você utiliza o Entity Framework para programar e eles automaticamente já gera o banco de dados
+
+#### Padrão MVC
+
+É um padrão de programação que permite separar o programa nas camadas Model, View, Controller, essas  camas permitem que a programação seja encarada de forma diferente em cada parte do projeto.
+
+#### Camada Model
+
+É a camada responsável pela leitura e escrita de dados, e também suas validações
+
+#### Camada View
+
+É a camada que faz a interação com o usuário. Ela apenas faz exibição dos dados, sendo ela por meio de HTML ou XML
+
+#### Camada Controler
+
+É responsável por receber todas as requisições e controlar qual model e view será utilizada pelo usuário.
+
+------------------------------------------------------------------------
+
+No modelo ASP.NET MVC as requisições do navegador são enviadas para uma ação da Controller.
+
+ 
+ 
+ 
+
+

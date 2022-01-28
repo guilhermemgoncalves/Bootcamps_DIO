@@ -12,29 +12,51 @@ Aluno alunoAtual = new (0.0, 0, "", 0, prova);
 while (menu !="x")
 {
     Console.WriteLine("Questão 4 Menu");
+    Console.WriteLine("1) Inserir nova prova");
+    Console.WriteLine("2) Consultar todas as provas");
+    Console.WriteLine("3) Consultar maior prova");
+    Console.WriteLine("4) Consultar nota da prova");
+    Console.WriteLine("5) Consultar acertos da prova");
     menu = Console.ReadLine().ToLower();
     Console.Clear();
     switch (menu)
     {
         case "1":
-            Console.WriteLine("1 - Inserir prova");
+            Console.WriteLine("1 - Inserir prova: ");
             InserirProva();
             break;
         case "2":
-            Console.WriteLine("2 - Lista: ");
+            Console.WriteLine("2 - Listar alunos e notas: ");
             ListaAlunos();
             break;
         case "3":
-            Console.WriteLine("3 - Maior");
+            Console.WriteLine("3 - Maior prova");
             Maior(alunoAtual);
+            break;    
+            case "4":
+            Console.WriteLine("4 - Consultar nota da prova: ");
+            ConsultaNota(alunoAtual);
+            break;
+        case "5":
+            Console.WriteLine("5 - Consultar acertos da prova: ");
+            ConsultaAcertos(alunoAtual);
             break;
         default:
-            Console.WriteLine("Opção Invalida");
+            Console.WriteLine("Opção Invalida!");
             break;
 
     }
 }
 
+void ConsultaAcertos(Aluno alunoAtual)
+{
+    Console.WriteLine(alunoAtual.RetornaAcertos());
+}
+
+void ConsultaNota(Aluno alunoAtual)
+{
+    Console.WriteLine(alunoAtual.RetornaNota());
+}
 
 Console.WriteLine(gabarito);
 
@@ -65,9 +87,11 @@ void InserirProva()
             }
 
         }
+        
         while (entradaRespostaAluno != 'a' ^ entradaRespostaAluno != 'b' ^ entradaRespostaAluno != 'c' ^ entradaRespostaAluno != 'd' ^ entradaRespostaAluno != 'e');
         prova.respostaAluno(entradaRespostaAluno);
     }
+    Console.Clear();
 
 
     Aluno aluno = new(prova.Nota(), prova.Acertos(), nome: nomeAluno, numeroDeChamada: numeroDaChamada, prova);
@@ -103,4 +127,7 @@ void Maior(Aluno alunoAtual)
         }        
     }
 
+    Console.WriteLine($"O Alunor com maior nota é: {alunoMaior}");
+
 }
+

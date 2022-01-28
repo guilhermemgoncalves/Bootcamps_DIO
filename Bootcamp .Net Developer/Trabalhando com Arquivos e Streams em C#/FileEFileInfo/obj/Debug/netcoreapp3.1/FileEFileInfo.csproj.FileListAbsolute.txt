@@ -1,0 +1,14 @@
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\bin\Debug\netcoreapp3.1\FileEFileInfo.exe
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\bin\Debug\netcoreapp3.1\FileEFileInfo.deps.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\bin\Debug\netcoreapp3.1\FileEFileInfo.runtimeconfig.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\bin\Debug\netcoreapp3.1\FileEFileInfo.runtimeconfig.dev.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\bin\Debug\netcoreapp3.1\FileEFileInfo.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\bin\Debug\netcoreapp3.1\FileEFileInfo.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\obj\Debug\netcoreapp3.1\FileEFileInfo.csproj.AssemblyReference.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\obj\Debug\netcoreapp3.1\FileEFileInfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\obj\Debug\netcoreapp3.1\FileEFileInfo.AssemblyInfoInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\obj\Debug\netcoreapp3.1\FileEFileInfo.AssemblyInfo.cs
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\obj\Debug\netcoreapp3.1\FileEFileInfo.csproj.CoreCompileInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\obj\Debug\netcoreapp3.1\FileEFileInfo.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\obj\Debug\netcoreapp3.1\FileEFileInfo.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Trabalhando com Arquivos e Streams em C#\FileEFileInfo\obj\Debug\netcoreapp3.1\FileEFileInfo.genruntimeconfig.cache

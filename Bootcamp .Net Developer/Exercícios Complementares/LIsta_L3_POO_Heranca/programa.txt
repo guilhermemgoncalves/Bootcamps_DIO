@@ -1,0 +1,36 @@
+     int nEquipamentos = 10;
+            Equipamento equipamento = new Equipamento(nEquipamentos);
+
+            equipamento.SetValor(8, 10.5);
+            Console.WriteLine(equipamento.GetValor(8));
+
+-----------
+public class Equipamento
+    {
+        
+        private int numeroEquipamentos;
+        private double[] valor;
+     
+        public Equipamento(int numeroEquipamentos)
+        {
+            this.numeroEquipamentos = numeroEquipamentos;
+            this.valor = new double [numeroEquipamentos];
+        }
+
+        public int GetNumeroEquipamentos()
+        {
+            return numeroEquipamentos;
+        }
+
+        public double GetValor(int numero)
+        {
+            return this.valor[numero];
+        }   
+        public void SetValor(int numero, double valor)
+        {
+            this.valor[numero] = valor;
+        }
+
+
+
+    }
