@@ -1,0 +1,14 @@
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\obj\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.csproj.AssemblyReference.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\obj\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\obj\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.AssemblyInfoInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\obj\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.AssemblyInfo.cs
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\obj\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.csproj.CoreCompileInputs.cache
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\bin\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.exe
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\bin\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.deps.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\bin\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.runtimeconfig.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\bin\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.runtimeconfig.dev.json
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\bin\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\bin\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\obj\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.dll
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\obj\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.pdb
+C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Desafios de Codigo\DesafiosDeCodigoGFT4\obj\Debug\netcoreapp3.1\DesafiosDeCodigoGFT4.genruntimeconfig.cache

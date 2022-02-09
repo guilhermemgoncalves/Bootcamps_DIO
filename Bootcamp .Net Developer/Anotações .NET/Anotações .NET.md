@@ -3,9 +3,9 @@ Anotações .NET
 # O que é o .NET
 
 É uma framework que da suporte a alguns tipos de linguagem com: C# F# e VB
-Para se programar atravéz do VScode com .NET, precisamos instalar sua SDK separadamente
+Para se programar através do VScode com .NET, precisamos instalar sua SDK separadamente
 Para utiliza-lo com o Visual Studio podemos instalar o pacote dentro do próprio aplicativo do VS.
-Lembrando: Visual Studio é uma IDE com vários recursos para a programação em C# e o VS code é apenas um editor de código, que possui vários recursos de conexão, porem não auxilia automáticamente na produção do código.
+Lembrando: Visual Studio é uma IDE com vários recursos para a programação em C# e o VS code é apenas um editor de código, que possui vários recursos de conexão, porem não auxilia automaticamente na produção do código.
 
 # O que é e como funciona o C#
 Assim como Java é uma linguagem fortemente tipada (o que permite detectar erros em tempo de compilação), é elegante, e orientada a objetos.
@@ -14,16 +14,16 @@ Suporta os conceitos de orientação ao objetos.
 
 Programas em C# são desenvolvidos em .NET
 
-O .NET já possui uma infinidade de classe pré implementadas que facilitam a execução de programas e soluções.
+O .NET já possui uma infinidade de classes pré implementadas que facilitam a execução de programas e soluções.
 
 ### Conversão do código fonte
 
-O Codigo fonte possui o seguinte fluxo de conversão:
+O Código fonte possui o seguinte fluxo de conversão:
 *  O arquivo é gerado em linguagem de alto nível através de Editor de texto(ou IDE) Arquivo C# (cs) 
 * O arquivo é Compilado por Roslyn (IL - Intermediary language)
 * O Código IL  são armazenados em um arquivo intermediário chamado assembly (.exe ou .dll)
 *  Quando o programa C# é executado o assembly é carregado no CLR (common language Runtimme)
-*  Depois de carregado a compilação e executada em método Just in time (JIT) ou seja, convertido em código no momento da aplicação, transformando a linguagem compliada em linguagem de maquina(no caso das aulas no console).
+*  Depois de carregado a compilação e executada em método Just in time (JIT) ou seja, convertido em código no momento da aplicação, transformando a linguagem compilada em linguagem de máquina (no caso das aulas no console).
 
 ![image-20211126151628305](C:\Drives\Trabalho\DIO\Bootcamps_DIO\Bootcamp .Net Developer\Anotações .NET\Fluxograma Funcionamento .NET e C#)
 
@@ -41,7 +41,7 @@ Podem ser formados por um ou mais arquivos e declaram tipos, membros e podem ser
 
 ### Tipos
 
-Classes e interefaces são exemplos de tipos
+Classes e interfaces são exemplos de tipos
 
 ### Membros
 
@@ -103,7 +103,7 @@ Os interruptores de códigos são elementos que realizam funções dentro de loo
 
 ### Break
 
-O Interruptor break para o loop caso uma condição seja satisfeita 
+O Interruptor break encerra o loop caso uma condição seja satisfeita 
 
 ### Continue
 
@@ -117,7 +117,7 @@ Existem dois tipos de return
 
 return sem valor `return;`
 
-return com valor `return valor;
+return com valor `return valor;`
 
 ## Coleções em C#
 
@@ -141,7 +141,7 @@ A variável array não admite sua construção com dados de primitivos e/ou obje
 
 #### Indexado
 
-A vaiável array é indexada, sendo assim, sua organização e seu sequenciamento pode ser garantido e o acesso a estas informações ficam mais coerentes.
+A variável array é indexada, sendo assim, sua organização e seu sequenciamento pode ser garantido e o acesso a estas informações ficam mais coerentes.
 
 #### Elemento 
 
@@ -157,12 +157,22 @@ O Índice do array é o lugar exato onde o elemento do array está alocado.
 
 ### Ordenando Arrays
 
-Existem diversos tipos de algoritmos, a ideia é entender diversos tipos de algoritmos para saber como eles funcionam mas o pró´rioi .NET faz essa ordenação automaticamente
+Existem diversos tipos de algoritmos, a ideia é entender diversos tipos de algoritmos para saber como eles funcionam mas o próprio .NET faz essa ordenação automaticamente
 
 #### Algoritmo de ordenação Bubble Sort
 
-O Algoritmo Bubble Sort é um metodo de ordenação de arrays que funciona com a comparação
-Se o dado atual for maior que o dado anterior, trocamos os elementos de posição, assim os elementos maiores são colocados nas posições mais adiante
+O Algoritmo Bubble Sort é um método de ordenação de arrays que funciona com a comparação
+Se o dado atual for maior que o dados
+
+
+
+
+
+
+
+
+
+- anterior, trocamos os elementos de posição, assim os elementos maiores são colocados nas posições mais adiante
 
 ```C#
 
@@ -1042,7 +1052,6 @@ o caractere * é coringa, que varre tudo, se colocarmos qualquer coisa por exemp
 #### Criar diretório e subdiretórios
 
 
-​       
 ​       public  void CriarDiretorio(string caminho)
 ​        {
 ​           var retorno = Directory.CreateDirectory(caminho);
@@ -1886,7 +1895,6 @@ Model First é um modo que geramos um modelo através do EDM designer e depois c
 No modelo ASP.NET MVC as requisições do navegador são enviadas para uma ação da Controller.
 
  
- 
- 
 
+ 
 
